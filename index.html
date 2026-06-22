@@ -138,6 +138,41 @@
     }
     .learn-more:hover .arrow { transform: translateX(4px); }
 
+    /* Signup block */
+    .signup-block {
+      margin-bottom: 40px;
+    }
+    .signup-label {
+      font-size: 0.92rem;
+      color: rgba(245, 240, 232, 0.65);
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+    .signup-btn {
+      display: inline-block;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      color: #2C4A1E;
+      background: #C9A87C;
+      text-decoration: none;
+      padding: 13px 28px;
+      border-radius: 50px;
+      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .signup-btn:hover {
+      background: #F5F0E8;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+    .signup-btn .arrow {
+      display: inline-block;
+      margin-left: 6px;
+      transition: transform 0.3s ease;
+    }
+    .signup-btn:hover .arrow { transform: translateX(4px); }
+
     /* Mouse parallax */
     .shapes .shape { transition: transform 0.1s linear; }
   </style>
@@ -155,6 +190,10 @@
     <h1>Repair Café<br/>of the Peninsula</h1>
     <span class="coming-soon">Coming Soon</span>
     <div class="divider"></div>
+    <div class="signup-block">
+      <p class="signup-label">Be the first to know when we launch and start planning our first event.</p>
+      <a href="http://eepurl.com/ggrhJO5w3i" class="signup-btn">Join our Community Mailing List <span class="arrow">&rarr;</span></a>
+    </div>
     <a href="https://www.repaircafe.org/en/" target="_blank" rel="noopener" class="learn-more">
       Learn more about Repair Cafés <span class="arrow">&rarr;</span>
     </a>
