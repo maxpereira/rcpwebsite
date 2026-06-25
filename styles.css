@@ -607,6 +607,7 @@ section { padding: 100px 0; position: relative; }
   flex-direction: column;
 }
 .donate-highlight .btn-primary { margin-top: auto; align-self: flex-start; }
+.donate-highlight .tools-contact-btn { align-self: stretch; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
 .tools-contact-btn {
   display: inline-flex;
   align-items: center;
@@ -622,7 +623,6 @@ section { padding: 100px 0; position: relative; }
   font-size: 0.95rem;
   letter-spacing: 0.02em;
   margin-top: auto;
-  align-self: flex-start;
 }
 .donate-highlight .highlight-icon { font-size: 2.5rem; display: block; margin-bottom: 16px; }
 .donate-highlight h3 { color: var(--cream); font-size: 1.5rem; margin-bottom: 16px; }
@@ -930,7 +930,7 @@ footer {
 .no-bring p { font-size: 0.82rem; color: var(--text-light); margin: 0; }
 .no-bring p a { color: var(--brown-mid); }
 .contact-email-img { height: 1em; width: auto; vertical-align: middle; display: inline; }
-.tools-contact-btn .contact-email-img { display: block; height: 1em; width: auto; margin-top: 0.1em; }
+.tools-contact-btn .contact-email-img { display: block; height: 1em; width: auto; margin-top: 1px; }
 
 /* =========================================
    FAQ
