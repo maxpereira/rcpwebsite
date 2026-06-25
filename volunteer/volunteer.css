@@ -1,0 +1,184 @@
+/* =========================================
+   VOLUNTEER PAGE — Additional Styles
+   ========================================= */
+
+/* --- Hero --- */
+#vol-hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 140px 2rem 80px;
+  text-align: center;
+}
+.vol-hero-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #1a3310 0%, var(--green-dark) 50%, var(--green-mid) 100%);
+  z-index: 0;
+}
+.vol-hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(90, 138, 62, 0.3) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(90, 138, 62, 0.2) 0%, transparent 50%);
+}
+.vol-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+}
+.vol-hero-content h1 { color: var(--cream); margin-bottom: 20px; }
+.vol-hero-content .hero-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--tan);
+  margin-bottom: 16px;
+  display: block;
+}
+.vol-hero-content .hero-sub {
+  font-size: 1.1rem;
+  color: rgba(245, 240, 232, 0.82);
+  max-width: 600px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+/* --- How It Works --- */
+#vol-how { background: var(--cream); }
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 36px;
+}
+.how-card {
+  background: var(--white);
+  border: 1px solid rgba(44, 74, 30, 0.08);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  box-shadow: var(--shadow);
+  transition: all var(--transition);
+}
+.how-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.how-num {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: rgba(44, 74, 30, 0.35);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.how-card h3 { color: var(--green-dark); font-size: 1rem; margin-bottom: 8px; }
+.how-card p { font-size: 0.87rem; }
+
+.time-commitment {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(44, 74, 30, 0.06);
+  border-left: 4px solid var(--green-mid);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 18px 24px;
+  font-size: 0.9rem;
+  color: var(--text-mid);
+}
+.tc-icon { font-size: 1.4rem; flex-shrink: 0; }
+.time-commitment strong { color: var(--green-dark); }
+
+/* --- Repair Skills --- */
+#vol-repair-skills { background: var(--cream-dark); }
+.vol-repair-card p { font-size: 0.87rem; margin-bottom: 10px; }
+.vol-repair-card p:last-child { margin-bottom: 0; }
+.vol-skill-note {
+  font-size: 0.78rem !important;
+  color: var(--text-light) !important;
+  font-style: italic;
+  border-top: 1px solid rgba(44, 74, 30, 0.08);
+  padding-top: 10px;
+  margin-top: 10px !important;
+}
+
+/* --- Event Support --- */
+#vol-event-support { background: var(--cream); }
+.support-grid-full {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.support-full-card {
+  background: var(--white);
+  border: 1px solid rgba(44, 74, 30, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  box-shadow: var(--shadow);
+  transition: all var(--transition);
+}
+.support-full-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.support-full-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.support-full-icon { font-size: 2rem; flex-shrink: 0; }
+.support-full-card h3 { color: var(--green-dark); font-size: 1.05rem; }
+.support-full-card p { font-size: 0.87rem; margin-bottom: 10px; }
+.support-full-card p:last-child { margin-bottom: 0; }
+
+/* --- Outreach --- */
+#vol-outreach { background: var(--green-dark); overflow: hidden; }
+#vol-outreach .section-header h2 { color: var(--cream); }
+#vol-outreach .section-tag { color: var(--tan); background: rgba(201, 168, 124, 0.2); }
+#vol-outreach .section-sub { color: rgba(245, 240, 232, 0.75); }
+.outreach-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.outreach-card {
+  background: rgba(245, 240, 232, 0.07);
+  border: 1px solid rgba(245, 240, 232, 0.12);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  transition: all var(--transition);
+}
+.outreach-card:hover {
+  background: rgba(245, 240, 232, 0.12);
+  border-color: rgba(201, 168, 124, 0.4);
+  transform: translateY(-4px);
+}
+.outreach-icon { font-size: 2.2rem; margin-bottom: 14px; display: block; }
+.outreach-card h3 { color: var(--cream); font-size: 1.05rem; margin-bottom: 10px; }
+.outreach-card p { color: rgba(245, 240, 232, 0.75); font-size: 0.87rem; margin-bottom: 10px; }
+.outreach-card p:last-child { margin-bottom: 0; }
+.outreach-card .vol-skill-note {
+  color: rgba(245, 240, 232, 0.5) !important;
+  border-top-color: rgba(245, 240, 232, 0.12) !important;
+}
+
+/* --- Contact / Sign Up --- */
+#vol-contact { background: var(--cream-dark); }
+#vol-contact .section-header h2 { color: var(--green-dark); }
+
+/* --- Mobile --- */
+@media (max-width: 900px) {
+  .how-grid { grid-template-columns: repeat(2, 1fr); }
+  .support-grid-full { grid-template-columns: 1fr; }
+  .outreach-grid { grid-template-columns: 1fr; }
+}
+
+#vol-contact .vol-cta-block { background: var(--cream-dark); border: none; }
+#vol-contact .vol-cta-block h2 { color: var(--green-dark); }
+#vol-contact .vol-cta-block p { color: var(--text-mid); }
+
+@media (max-width: 640px) {
+  .how-grid { grid-template-columns: 1fr; }
+  #vol-hero { min-height: auto; }
+}

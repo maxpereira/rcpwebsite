@@ -3,216 +3,442 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Repair Café of the Peninsula – Coming Soon</title>
-  <meta name="description" content="Community repair events coming to the San Francisco Bay Peninsula. Join our mailing list to be the first to know when we launch." />
-  <meta property="og:title" content="Repair Café of the Peninsula – Coming Soon" />
-  <meta property="og:description" content="Community repair events coming to the San Francisco Bay Peninsula. Join our mailing list to be the first to know when we launch." />
+  <title>Repair Café of the Peninsula</title>
+  <meta name="description" content="Free community repair events along the San Francisco Peninsula. Bring your broken items and fix them alongside skilled volunteer repair coaches. First event coming late summer 2026." />
+  <meta property="og:title" content="Repair Café of the Peninsula" />
+  <meta property="og:description" content="Free community repair events along the San Francisco Peninsula. Bring your broken items and fix them alongside skilled volunteer repair coaches. First event coming late summer 2026." />
   <meta property="og:image" content="https://repaircafepeninsula.org/images/ogthumb.png" />
-  <meta property="og:url" content="https://repaircafepeninsula.org/" />
+  <meta property="og:url" content="https://repaircafepeninsula.org" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Repair Café of the Peninsula" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Repair Café of the Peninsula – Coming Soon" />
-  <meta name="twitter:description" content="Community repair events coming to the San Francisco Bay Peninsula. Join our mailing list to be the first to know when we launch." />
+  <meta name="twitter:title" content="Repair Café of the Peninsula" />
+  <meta name="twitter:description" content="Free community repair events along the San Francisco Peninsula. Bring your broken items and fix them alongside skilled volunteer repair coaches. First event coming late summer 2026." />
   <meta name="twitter:image" content="https://repaircafepeninsula.org/images/ogthumb.png" />
   <link rel="icon" href="images/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --cream:        #F5F0E8;
-      --green-dark:   #2C4A1E;
-      --green-mid:    #3D6B2A;
-      --green-light:  #5A8A3E;
-      --tan:          #C9A87C;
-      --brown-mid:    #8B5E3C;
-    }
-
-    html, body {
-      height: 100%;
-      overflow: hidden;
-    }
-
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-      background: linear-gradient(135deg, #1a3310 0%, var(--green-dark) 50%, var(--green-mid) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      position: relative;
-    }
-
-    /* Background radial accents */
-    body::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image:
-        radial-gradient(ellipse at 20% 50%, rgba(90, 138, 62, 0.3) 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 20%, rgba(90, 138, 62, 0.2) 0%, transparent 50%);
-      pointer-events: none;
-    }
-
-    /* Floating shapes */
-    .shapes { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
-    .shape {
-      position: absolute;
-      border-radius: 50%;
-      border: 1px solid rgba(245, 240, 232, 0.07);
-      animation: float 8s ease-in-out infinite;
-    }
-    .shape-1 { width: 600px; height: 600px; top: -150px; left: -200px; animation-delay: 0s; }
-    .shape-2 { width: 350px; height: 350px; bottom: -80px; right: -100px; animation-delay: -3s; }
-    .shape-3 { width: 220px; height: 220px; top: 25%; right: 12%; animation-delay: -5s; }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0) rotate(0deg); }
-      50%       { transform: translateY(-20px) rotate(5deg); }
-    }
-
-    /* Main content */
-    .content {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      padding: 2rem;
-      animation: fadeUp 1s ease 0.2s both;
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    .logo-img {
-      display: block;
-      width: min(840px, 80vw);
-      margin: 0 auto 40px;
-      animation: fadeUp 1s ease 0s both;
-    }
-
-    .coming-soon {
-      font-family: 'Inter', system-ui, sans-serif;
-      font-size: clamp(1rem, 2.5vw, 1.4rem);
-      font-weight: 300;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--tan);
-      margin-bottom: 48px;
-      display: block;
-    }
-
-    .divider {
-      width: 48px;
-      height: 2px;
-      background: var(--tan);
-      margin: 0 auto 48px;
-      opacity: 0.5;
-      border-radius: 2px;
-    }
-
-    .learn-more {
-      display: inline-block;
-      font-family: 'Inter', system-ui, sans-serif;
-      font-size: 0.88rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: rgba(245, 240, 232, 0.6);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(245, 240, 232, 0.25);
-      padding-bottom: 3px;
-      transition: color 0.3s ease, border-color 0.3s ease;
-    }
-    .learn-more:hover {
-      color: var(--cream);
-      border-color: var(--tan);
-    }
-    .learn-more .arrow {
-      display: inline-block;
-      margin-left: 6px;
-      transition: transform 0.3s ease;
-    }
-    .learn-more:hover .arrow { transform: translateX(4px); }
-
-    /* Signup block */
-    .signup-block {
-      margin-bottom: 40px;
-    }
-    .signup-label {
-      font-size: 0.92rem;
-      color: rgba(245, 240, 232, 0.65);
-      margin-bottom: 18px;
-      line-height: 1.6;
-    }
-    .signup-btn {
-      display: inline-block;
-      font-family: 'Inter', system-ui, sans-serif;
-      font-size: 0.9rem;
-      font-weight: 600;
-      letter-spacing: 0.03em;
-      color: #2C4A1E;
-      background: #C9A87C;
-      text-decoration: none;
-      padding: 13px 28px;
-      border-radius: 50px;
-      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .signup-btn:hover {
-      background: #F5F0E8;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-    }
-    .signup-btn .arrow {
-      display: inline-block;
-      margin-left: 6px;
-      transition: transform 0.3s ease;
-    }
-    .signup-btn:hover .arrow { transform: translateX(4px); }
-
-    /* Mouse parallax */
-    .shapes .shape { transition: transform 0.1s linear; }
-  </style>
 </head>
 <body>
 
-  <div class="shapes">
-    <div class="shape shape-1"></div>
-    <div class="shape shape-2"></div>
-    <div class="shape shape-3"></div>
-  </div>
-
-  <div class="content">
-    <img src="images/rcp.png" alt="Repair Café of the Peninsula" class="logo-img" />
-    <span class="coming-soon">Coming Soon</span>
-    <div class="divider"></div>
-    <div class="signup-block">
-      <p class="signup-label">Be the first to know when we launch and start planning our first event.</p>
-      <a href="http://eepurl.com/ggrhJO5w3i" class="signup-btn">Join our Community Mailing List <span class="arrow">&rarr;</span></a>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="images/rcp.png" alt="Repair Café of the Peninsula" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#repairs">What We Fix</a></li>
+        <li><a href="#first-event">First Event</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="volunteer/" class="nav-cta">Volunteer</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <a href="https://www.repaircafe.org/en/" target="_blank" rel="noopener" class="learn-more">
-      Learn more about Repair Cafés <span class="arrow">&rarr;</span>
-    </a>
-  </div>
+  </nav>
 
-  <script>
-    // Subtle mouse parallax on shapes
-    document.addEventListener('mousemove', (e) => {
-      const shapes = document.querySelectorAll('.shape');
-      const cx = window.innerWidth / 2;
-      const cy = window.innerHeight / 2;
-      const dx = (e.clientX - cx) / cx;
-      const dy = (e.clientY - cy) / cy;
-      shapes.forEach((shape, i) => {
-        const factor = (i + 1) * 7;
-        shape.style.transform = `translate(${dx * factor}px, ${dy * factor}px)`;
-      });
-    });
-  </script>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">Community &bull; Sustainability &bull; Skill-Sharing</p>
+      <img src="images/rcp.png" alt="Repair Café of the Peninsula" class="hero-logo" />
+      <p class="hero-sub">Bringing neighbors together to fix what's broken,<br/>reduce waste, and keep skills alive.</p>
+      <div class="hero-btns">
+        <a href="http://eepurl.com/ggrhJO5w3i" target="_blank" rel="noopener" class="btn btn-primary btn-tan">Sign Up</a>
+        <a href="#donate" class="btn btn-secondary">Support Us</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+    <div class="hero-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </section>
 
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What Is This?</span>
+        <h2>What Is a Repair Café?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="lead">A Repair Café is a free community gathering where people bring broken items and work alongside skilled volunteers to fix them together, hands-on.</p>
+          <p>Born in Amsterdam in 2009, Repair Cafés have spread to over 2,500 locations worldwide. The idea is simple: instead of throwing something away, bring it in. Volunteer repair coaches (people with real skills in electronics, sewing, mechanics, and more) sit down with you, assess the problem together, and guide you through the repair process. <a href="https://www.repaircafe.org/en" target="_blank" rel="noopener">Learn more about the Repair Café Foundation &rarr;</a></p>
+          <p><strong>This isn't a drop-off service.</strong> You roll up your sleeves, work alongside the volunteer, and leave knowing both how to fix your item and a little more about how it works. The volunteer is your guide; you both work together to complete the repair.</p>
+          <p>Best of all: <strong>it's free</strong>. No charges, no appointments, no judgment! Donations are appreciated to cover our operating costs and purchase shared tools.</p>
+        </div>
+        <div class="about-cards reveal">
+          <div class="fact-card">
+            <div class="fact-icon">&#127759;</div>
+            <div class="fact-num">2,500+</div>
+            <div class="fact-label">Repair Cafés worldwide</div>
+            <div class="fact-source">via repaircafe.org</div>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">&#9851;</div>
+            <div class="fact-num">~70%</div>
+            <div class="fact-label">of items successfully repaired</div>
+            <div class="fact-source">via repaircafe.org</div>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">&#128154;</div>
+            <div class="fact-num">Free</div>
+            <div class="fact-label">Always free for visitors</div>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">&#127795;</div>
+            <div class="fact-num">Less Waste</div>
+            <div class="fact-label">Items fixed, not trashed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section id="mission">
+    <div class="mission-bg-accent"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Why the Peninsula?</span>
+        <h2>Our Mission</h2>
+      </div>
+      <div class="mission-intro reveal">
+        <p class="lead">The Peninsula is a vibrant, diverse region stretching along the Bay and the coast.<br>But like everywhere else, we throw too much away.</p>
+        <div class="cities-list">
+          <span class="cities-label">We serve:</span>
+          <div class="cities-tags">
+            <span>Belmont</span><span>Burlingame</span><span>Daly City</span>
+            <span>Half Moon Bay</span><span>Menlo Park</span><span>Millbrae</span>
+            <span>Pacifica</span><span>Palo Alto</span><span>Redwood City</span>
+            <span>San Bruno</span><span>San Carlos</span><span>San Mateo</span>
+            <span>South San Francisco</span><span>&amp; surrounding areas</span>
+          </div>
+        </div>
+      </div>
+      <div class="mission-pillars">
+        <div class="pillar">
+          <div class="pillar-icon">&#127960;&#65039;</div>
+          <h3>Build Community</h3>
+          <p>Create a welcoming space where people from all walks of life meet, connect, and share skills. Repair Cafés are as much about human connection as they are about fixing things.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">&#127807;</div>
+          <h3>Reduce Waste</h3>
+          <p>The Bay Area sends millions of pounds of electronics and household goods to landfill every year. We want to keep as many items as possible out of the waste stream, one repair at a time.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">&#128295;</div>
+          <h3>Revive Repair Skills</h3>
+          <p>We live in a throwaway culture. Our goal is to connect experienced fixers with people eager to learn; and make repair feel approachable, not intimidating.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">&#128205;</div>
+          <h3>Stay Local &amp; Grassroots</h3>
+          <p>We are a small, community-run effort with no corporate backing and no red tape. Just people who believe in fixing things and helping their neighbors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE FIX -->
+  <section id="repairs">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Bring It In</span>
+        <h2>What We Fix</h2>
+        <p class="section-sub">Got something broken? Bring it and get your hands dirty alongside a volunteer repair coach.</p>
+      </div>
+
+      <div class="repair-grid">
+
+        <div class="repair-card">
+          <div class="repair-card-header">
+            <span class="repair-icon">&#128268;</span>
+            <div>
+              <h3>Electronics &amp; Small Appliances</h3>
+            </div>
+          </div>
+          <p class="repair-desc">Lamps, fans, radios, chargers, headphones, and similar small appliances: if it plugs in or runs on batteries, bring it in and work with a volunteer to diagnose and fix it.</p>
+        </div>
+
+        <div class="repair-card">
+          <div class="repair-card-header">
+            <span class="repair-icon">&#129523;</span>
+            <div>
+              <h3>Sewing &amp; Textiles</h3>
+            </div>
+          </div>
+          <p class="repair-desc">Torn seams, missing buttons, frayed hems, and worn fabric: bring your clothing, bags, and soft goods and stitch them back together with a volunteer guiding the way.</p>
+        </div>
+
+        <div class="repair-card">
+          <div class="repair-card-header">
+            <span class="repair-icon">&#127968;</span>
+            <div>
+              <h3>Furniture &amp; Wood</h3>
+            </div>
+          </div>
+          <p class="repair-desc">Wobbly chairs, broken hinges, stuck drawers: bring it in and get hands-on with a volunteer to stabilize, reattach, and restore it together.</p>
+        </div>
+
+        <div class="repair-card">
+          <div class="repair-card-header">
+            <span class="repair-icon">&#127981;</span>
+            <div>
+              <h3>Toys, Ceramics, Jewelry &amp; Everything Else</h3>
+            </div>
+          </div>
+          <p class="repair-desc">Broken toys, chipped mugs, cracked ceramics, broken necklaces, loose clasps, games missing pieces, and the household things that don't fit anywhere else. Roll up your sleeves and puzzle it out with a volunteer, and if it truly can't be fixed, we'll tell you honestly.</p>
+        </div>
+
+      </div>
+
+      <div class="no-bring reveal">
+        <h4>&#128683; Please don't bring:</h4>
+        <ul>
+          <li>Large appliances</li>
+		  <li>Bicycles — we support local bike shops and are happy to provide referrals</li>
+          <li>Earbuds, mobile phones, cameras, and watches</li>
+          <li>Toasters or ovens</li>
+          <li>Three-phase power tools</li>
+          <li>Sewing alterations — we do repairs only, not alterations or resizing</li>
+          <li>Broken items missing critical parts that can't reasonably be sourced</li>
+          
+          <li>Vehicles or motorized equipment</li>
+          <li>Items in hazardous condition (leaking batteries, cracked screens, mold)</li>
+        </ul>
+        <p>If you're unsure, email us at <img src="images/contact.png" alt="info@repaircafepeninsula.org" class="contact-email-img" /> before the event.</p>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- FIRST EVENT -->
+  <section id="first-event">
+    <div class="container">
+      <div class="event-card reveal">
+        <div class="event-text">
+          <span class="section-tag light">Mark Your Calendar</span>
+          <h2>Our First Event</h2>
+          <p class="lead">We're planning our inaugural Repair Café event for <strong>late summer 2026</strong> somewhere on the Peninsula.</p>
+          <p>Details, including the exact date, time, and location, are still coming together. Sign up below to be the first to know. We'll announce everything via email as soon as it's confirmed.</p>
+          <a href="http://eepurl.com/ggrhJO5w3i" target="_blank" rel="noopener" class="btn btn-primary">Notify Me</a>
+        </div>
+        <div class="event-visual">
+          <div class="event-badge">
+            <div class="badge-inner">
+              <span class="badge-label">Coming</span>
+              <span class="badge-season">Late Summer</span>
+              <span class="badge-year">2026</span>
+              <span class="badge-where">The Peninsula, CA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- DONATE -->
+  <section id="donate">
+    <div class="donate-bg"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Support RCP</span>
+        <h2>Donate &amp; Support</h2>
+      </div>
+      <div class="donate-grid">
+        <div class="donate-main reveal">
+          <div class="donate-highlight">
+            <span class="highlight-icon">&#128296;</span>
+            <h3>We Need Tools &amp; Supplies Most</h3>
+            <p>Getting our first event off the ground requires equipment. <strong>Donations of tools and supplies are more impactful than cash</strong> at this early stage. If you have any of the following collecting dust, we'd love to give them a new purpose:</p>
+            <ul class="tool-list">
+              <li>&#10003; Multimeters &amp; soldering irons</li>
+              <li>&#10003; Sewing machines &amp; basic sewing kits</li>
+              <li>&#10003; Screwdrivers, pliers, wrenches &amp; hand tools</li>
+              <li>&#10003; Extension cords &amp; power strips</li>
+              <li>&#10003; Folding tables &amp; chairs</li>
+              <li>&#10003; Thread, fabric scraps, and buttons</li>
+              <li>&#10003; Consumables like nametags, tape, glue, staples, &amp; more</li>
+              <li>&#10003; Wire, heat shrink &amp; electrical supplies</li>
+            </ul>
+            <a href="http://eepurl.com/ggrhJO5w3i" target="_blank" rel="noopener" class="btn btn-primary">Offer a Tool or Supply Donation</a>
+          </div>
+        </div>
+        <div class="donate-secondary reveal">
+          <div class="donate-volunteer">
+            <span class="highlight-icon">&#129309;</span>
+            <h3>Volunteer With Us</h3>
+            <p>RCP runs entirely on the energy of people who give their time. We need repair experts across electronics, sewing, furniture, and also designers, photographers, outreach helpers, food &amp; beverage volunteers, and friendly faces to welcome visitors at the door.</p>
+            <p>You don't need to be a repair expert to make a huge difference. Most of our event support roles require nothing more than enthusiasm and a willingness to show up.</p>
+            <p><strong>Time commitment:</strong> roughly 3–4 hours at a single event, with no ongoing obligation.</p>
+            <a href="volunteer/" class="btn btn-primary">See All Volunteer Roles &rarr;</a>
+          </div>
+        </div>
+        <div class="donate-secondary reveal" style="display:none">
+          <div class="donate-money">
+            <span class="highlight-icon">&#128181;</span>
+            <h3>Monetary Donations</h3>
+            <p>We also welcome monetary contributions to help cover costs like venue fees, promotional materials, food and beverages for visitors and volunteers, and supplies we can't source through donations.</p>
+            <a href="http://eepurl.com/ggrhJO5w3i" target="_blank" rel="noopener" class="btn btn-outline">Get In Touch to Donate</a>
+            <div class="tax-disclaimer">
+              <span class="disclaimer-icon">&#9888;</span>
+              <p><strong>Important:</strong> Repair Café of the Peninsula is <em>not</em> a registered nonprofit organization and donations are <strong>not tax-deductible</strong>. We're starting grassroots to gauge interest and feasibility; formal nonprofit status may follow if it makes sense.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Good Questions</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list reveal">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do I need an appointment, or is it drop-in?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Drop-in, no appointment needed. Just show up during event hours with your item and we'll get you set up with a volunteer. We may ask you to add your name to a waitlist if things get busy, but there's no pre-registration required.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How long does a repair take?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>It varies a lot depending on the item. Simple fixes (a button, a loose connection, etc.) might take 15–20 minutes. More complex repairs could take an hour or more. You'll be working alongside the volunteer the whole time, so plan to stay and be hands-on for the duration.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What if my item can't be fixed?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We'll always be upfront. If a repair is beyond what we can tackle together on the day (wrong tools, missing parts, or a fault that needs a specialist), we'll say so clearly and suggest next steps where we can. We never guarantee a fix, but you and your volunteer will always give it an honest best effort.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How many items can I bring?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We ask that you bring a maximum of one item per visit so that every visitor gets quality time working hands-on with a volunteer. If it's a quiet event, we're happy to tackle more.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Is it really free?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, completely free for visitors. Repair Cafés around the world operate on this principle: skilled volunteers give their time, and the community benefits. We may have a tip jar or small donation box for those who want to contribute to future events, but it is never expected or required.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            I have repair skills. How do I get involved as a volunteer?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We'd love to have you. <a href="http://eepurl.com/ggrhJO5w3i">Sign up for our mailing list</a> and tell us a bit about your skills and we'll be in touch. We're looking for volunteers who can commit to roughly 3–4 hours at a single event. No prior volunteering experience needed.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Are you a nonprofit organization?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Not currently. Repair Café of the Peninsula is a grassroots community initiative. We're starting small to evaluate interest and feasibility before committing to formal incorporation. If the demand is there and it makes sense, we plan to pursue nonprofit status down the road. For now, any donations are not tax-deductible. We appreciate your support regardless.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How often are events held?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Our first event is targeted for late summer 2026, and we're still searching for the venue. <a href="http://eepurl.com/ggrhJO5w3i">Sign up for our mailing list</a> to be the first to know when we announce it. Going forward, the goal is to hold events regularly based on demand, rotating around the Peninsula so we can reach different communities over time. As we grow and get more volunteers and resources under our belt, we'd love to increase our event frequency.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="vol-cta-block reveal">
+        <span class="section-tag">Get Involved</span>
+        <h2>Stay in the Loop</h2>
+        <p>Whether you want to volunteer, donate tools, or just be the first to know when we announce our first event — sign up and we'll be in touch.</p>
+        <a href="http://eepurl.com/ggrhJO5w3i" target="_blank" rel="noopener" class="btn btn-primary">Sign Up</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="images/rcp.png" alt="Repair Café of the Peninsula" class="footer-logo-img" />
+          <div class="footer-tagline">Fix it. Don't bin it.</div>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#mission">Mission</a>
+          <a href="#repairs">What We Fix</a>
+          <a href="#donate">Donate</a>
+          <a href="#faq">FAQ</a>
+          <a href="http://eepurl.com/ggrhJO5w3i" target="_blank" rel="noopener">Contact</a>
+        </div>
+        <div class="footer-legal">
+          <p>Repair Café of the Peninsula (RCP) is a grassroots community initiative. We are <strong>not a registered nonprofit</strong>. Donations are not tax-deductible.</p>
+          <p><img src="images/contact2.png" alt="Contact us" class="footer-contact-img" /></p>
+          <p>&copy; 2026 Repair Café of the Peninsula.</p>
+          <p>Inspired by the <a href="https://www.repaircafe.org/en" target="_blank" rel="noopener" style="color: rgba(245,240,232,0.55);">Repair Café International Foundation</a>.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
