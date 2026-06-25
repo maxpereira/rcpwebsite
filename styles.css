@@ -606,7 +606,7 @@ section { padding: 100px 0; position: relative; }
   display: flex;
   flex-direction: column;
 }
-.donate-highlight .btn-primary { margin-top: 32px; align-self: flex-start; }
+.donate-highlight .btn-primary { margin-top: auto; align-self: flex-start; }
 .donate-highlight .highlight-icon { font-size: 2.5rem; display: block; margin-bottom: 16px; }
 .donate-highlight h3 { color: var(--cream); font-size: 1.5rem; margin-bottom: 16px; }
 .donate-highlight p { color: rgba(245, 240, 232, 0.82); margin-bottom: 24px; }
@@ -616,7 +616,7 @@ section { padding: 100px 0; position: relative; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 .tool-list li {
   font-size: 0.78rem;
@@ -651,8 +651,8 @@ section { padding: 100px 0; position: relative; }
 .donate-volunteer .highlight-icon { font-size: 2.5rem; display: block; margin-bottom: 16px; }
 .donate-volunteer h3 { color: var(--green-dark); margin-bottom: 16px; }
 .donate-volunteer p { color: var(--text-mid); margin-bottom: 16px; }
-.donate-volunteer p:last-of-type { margin-bottom: 0; }
-.donate-volunteer .btn { margin-top: 32px; align-self: flex-start; }
+.donate-volunteer p:last-of-type { margin-bottom: 40px; }
+.donate-volunteer .btn { margin-top: auto; align-self: flex-start; }
 .donate-volunteer strong { color: var(--green-dark); }
 .tax-disclaimer {
   margin-top: 24px;
