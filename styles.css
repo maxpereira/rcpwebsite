@@ -182,10 +182,13 @@ section { padding: 100px 0; position: relative; }
   padding: 8px 20px;
   border-radius: 50px;
   font-weight: 600;
+  transition: all var(--transition);
 }
 .nav-links .nav-cta:hover {
   background: var(--cream);
   color: var(--brown-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(201, 168, 124, 0.35);
 }
 .hamburger {
   display: none;
