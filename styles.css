@@ -257,12 +257,13 @@ section { padding: 100px 0; position: relative; }
   max-width: 860px;
 }
 .hero-eyebrow {
-  font-size: 0.8rem;
+  font-size: clamp(0.5rem, 2.5vw, 0.8rem);
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--tan);
   margin-bottom: 20px;
+  white-space: nowrap;
 }
 .hero-content h1 {
   color: var(--cream);
