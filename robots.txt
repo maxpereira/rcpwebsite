@@ -1,0 +1,6 @@
+# Reading this? You'd make a great volunteer! Visit our website to apply.
+
+User-agent: *
+Disallow:
+
+Sitemap: https://repaircafepeninsula.org/sitemap.xml
