@@ -209,6 +209,39 @@ section { padding: 100px 0; position: relative; }
 }
 
 /* =========================================
+   EVENT ANNOUNCEMENT / VOLUNTEER CTA
+   ========================================= */
+#event-announcement {
+  background: linear-gradient(135deg, var(--brown-dark) 0%, var(--brown-mid) 100%);
+  padding: 130px 0 28px;
+}
+.announcement-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  flex-wrap: wrap;
+  background: rgba(245, 240, 232, 0.08);
+  border: 1px solid rgba(245, 240, 232, 0.18);
+  border-radius: var(--radius-lg);
+  padding: 32px 40px;
+}
+.announcement-text { flex: 1; min-width: 280px; }
+.announcement-text .section-tag { margin-bottom: 10px; }
+.announcement-text h2 { color: var(--cream); margin: 4px 0 10px; font-size: clamp(1.5rem, 2.8vw, 2.1rem); }
+.announcement-org { color: rgba(245, 240, 232, 0.85); margin: 0 0 4px; }
+.announcement-address {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--cream);
+  font-size: clamp(1.3rem, 2.4vw, 1.8rem);
+  line-height: 1.25;
+  margin: 0 0 10px;
+}
+.announcement-sub { color: rgba(245, 240, 232, 0.85); margin: 0; }
+.announcement-btn { flex-shrink: 0; white-space: nowrap; }
+
+/* =========================================
    HERO
    ========================================= */
 #hero {
@@ -218,7 +251,7 @@ section { padding: 100px 0; position: relative; }
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 120px 2rem 80px;
+  padding: 60px 2rem 80px;
   text-align: center;
 }
 .hero-bg {
@@ -1063,6 +1096,8 @@ footer {
   .contact-grid { grid-template-columns: 1fr; }
   .event-card { grid-template-columns: 1fr; gap: 40px; padding: 48px 36px; }
   .event-visual { display: flex; justify-content: center; }
+  .announcement-inner { flex-direction: column; align-items: stretch; text-align: left; }
+  .announcement-btn { text-align: center; }
   .footer-inner { grid-template-columns: 1fr; text-align: center; }
   .footer-legal { text-align: center; max-width: 100%; }
   .footer-brand { justify-content: center; }
@@ -1073,11 +1108,7 @@ footer {
   .no-bring ul { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 640px) {
-  section { padding: 70px 0; }
-  .mission-pillars { grid-template-columns: 1fr; }
-  .repair-two-col { grid-template-columns: 1fr; }
-  .form-row { grid-template-columns: 1fr; }
+@media (max-width: 1100px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }
   .nav-links.open {
@@ -1092,8 +1123,17 @@ footer {
     z-index: 999;
   }
   .nav-links.open a { font-size: 1.3rem; }
+}
+
+@media (max-width: 640px) {
+  section { padding: 70px 0; }
+  .mission-pillars { grid-template-columns: 1fr; }
+  .repair-two-col { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
   .about-cards { grid-template-columns: repeat(2, 1fr); }
   .donate-highlight { padding: 32px 24px; }
   .contact-form { padding: 28px 20px; }
   .event-card { padding: 40px 24px; }
+  .announcement-inner { padding: 28px 24px; }
+  .announcement-address { font-size: 1.15rem; }
 }
