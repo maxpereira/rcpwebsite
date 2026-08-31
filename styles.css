@@ -583,7 +583,8 @@ section { padding: 100px 0; position: relative; }
 .event-text .lead { color: rgba(245, 240, 232, 0.88); }
 .event-text p + p { margin-top: 1rem; }
 .event-text p:not(.lead) { color: rgba(245, 240, 232, 0.7); }
-.event-text .btn-primary { margin-top: 24px; background: var(--tan); border-color: var(--tan); color: var(--brown-dark); }
+.event-btns { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px; }
+.event-text .btn-primary { background: var(--tan); border-color: var(--tan); color: var(--brown-dark); }
 .event-text .btn-primary:hover { background: var(--cream); border-color: var(--cream); }
 
 .event-visual { flex-shrink: 0; }
