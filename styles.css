@@ -444,6 +444,10 @@ section { padding: 100px 0; position: relative; }
   margin-bottom: 32px;
 }
 
+.repair-grid > .repair-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .repair-card {
   background: var(--white);
   border: 1px solid rgba(44, 74, 30, 0.08);
