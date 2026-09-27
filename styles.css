@@ -214,7 +214,7 @@ section { padding: 100px 0; position: relative; }
    ========================================= */
 #event-announcement {
   background: linear-gradient(135deg, var(--brown-dark) 0%, var(--brown-mid) 100%);
-  padding: 130px 0 28px;
+  padding: 92px 0 20px;
 }
 .announcement-inner {
   display: flex;
@@ -225,21 +225,14 @@ section { padding: 100px 0; position: relative; }
   background: rgba(245, 240, 232, 0.08);
   border: 1px solid rgba(245, 240, 232, 0.18);
   border-radius: var(--radius-lg);
-  padding: 32px 40px;
+  padding: 20px 32px;
 }
 .announcement-text { flex: 1; min-width: 280px; }
-.announcement-text .section-tag { margin-bottom: 10px; }
-.announcement-text h2 { color: var(--cream); margin: 4px 0 10px; font-size: clamp(1.5rem, 2.8vw, 2.1rem); }
-.announcement-org { color: rgba(245, 240, 232, 0.85); margin: 0 0 4px; }
-.announcement-address {
-  font-family: var(--font-serif);
-  font-weight: 700;
-  color: var(--cream);
-  font-size: clamp(1.3rem, 2.4vw, 1.8rem);
-  line-height: 1.25;
-  margin: 0 0 10px;
-}
-.announcement-sub { color: rgba(245, 240, 232, 0.85); margin: 0; }
+.announcement-tags { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.announcement-text h2 { color: var(--cream); margin: 8px 0 4px; font-size: clamp(1.5rem, 2.8vw, 2.1rem); line-height: 1.2; }
+.announcement-text p.checkin-note { margin: 0; }
+.announcement-org { color: rgba(245, 240, 232, 0.85); margin: 0; }
+.announcement-org strong { color: var(--cream); font-weight: 600; }
 .announcement-btn { flex-shrink: 0; white-space: nowrap; }
 
 /* =========================================
@@ -247,12 +240,13 @@ section { padding: 100px 0; position: relative; }
    ========================================= */
 #hero {
   min-height: 100vh;
+  min-height: calc(100svh - var(--announce-h, 0px));
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 60px 2rem 80px;
+  padding: 40px 2rem 90px;
   text-align: center;
 }
 .hero-bg {
@@ -306,6 +300,8 @@ section { padding: 100px 0; position: relative; }
 }
 .hero-logo {
   width: min(820px, 90vw);
+  /* shrink on short screens so logo, buttons and scroll hint all fit (logo is ~4.5:1) */
+  width: clamp(240px, calc((100svh - var(--announce-h, 0px) - 370px) * 4.48), min(820px, 90vw));
   height: auto;
   margin-bottom: 24px;
   filter: drop-shadow(0 2px 20px rgba(0,0,0,0.35));
@@ -1140,8 +1136,15 @@ footer {
   .donate-highlight { padding: 32px 24px; }
   .contact-form { padding: 28px 20px; }
   .event-card { padding: 40px 24px; }
-  .announcement-inner { padding: 28px 24px; }
-  .announcement-address { font-size: 1.15rem; }
+  .announcement-inner { padding: 18px 20px; gap: 14px; }
+  .announcement-text h2 { font-size: 1.35rem; margin: 6px 0 2px; }
+  .announcement-org { font-size: 0.9rem; line-height: 1.5; }
+  .announcement-btn { padding: 11px 24px; }
+  #event-announcement { padding: 84px 0 16px; }
+  #hero { padding: 28px 1.25rem 84px; }
+  .hero-eyebrow { margin-bottom: 12px; }
+  .hero-logo { margin-bottom: 16px; }
+  .hero-sub { font-size: 1rem; margin-bottom: 24px; }
 }
 
 /* =========================================
