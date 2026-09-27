@@ -1017,6 +1017,7 @@ footer {
 }
 .faq-answer.open { display: block; }
 .faq-answer p { font-size: 0.93rem; color: var(--text-mid); line-height: 1.7; }
+.faq-answer p + p { margin-top: 0.75rem; }
 
 /* =========================================
    SOCIAL
