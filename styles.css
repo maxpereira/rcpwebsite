@@ -246,8 +246,9 @@ section { padding: 100px 0; position: relative; }
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 40px 2rem 90px;
+  padding: 40px 2rem 28px;
   text-align: center;
+  flex-direction: column;
 }
 .hero-bg {
   position: absolute;
@@ -283,6 +284,7 @@ section { padding: 100px 0; position: relative; }
   position: relative;
   z-index: 2;
   max-width: 860px;
+  margin: auto 0;
 }
 .hero-eyebrow {
   font-size: clamp(0.5rem, 2.5vw, 0.8rem);
@@ -301,7 +303,7 @@ section { padding: 100px 0; position: relative; }
 .hero-logo {
   width: min(820px, 90vw);
   /* shrink on short screens so logo, buttons and scroll hint all fit (logo is ~4.5:1) */
-  width: clamp(240px, calc((100svh - var(--announce-h, 0px) - 370px) * 4.48), min(820px, 90vw));
+  width: clamp(240px, calc((100svh - var(--announce-h, 0px) - 400px) * 4.48), min(820px, 90vw));
   height: auto;
   margin-bottom: 24px;
   filter: drop-shadow(0 2px 20px rgba(0,0,0,0.35));
@@ -315,10 +317,8 @@ section { padding: 100px 0; position: relative; }
 }
 .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 .hero-scroll-hint {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  margin-top: 28px;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -343,8 +343,8 @@ section { padding: 100px 0; position: relative; }
   50% { transform: rotate(45deg) translateY(6px); }
 }
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateX(-50%) translateY(10px); }
-  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* =========================================
@@ -1142,7 +1142,8 @@ footer {
   .announcement-org { font-size: 0.9rem; line-height: 1.5; }
   .announcement-btn { padding: 11px 24px; }
   #event-announcement { padding: 84px 0 16px; }
-  #hero { padding: 28px 1.25rem 84px; }
+  #hero { padding: 28px 1.25rem 20px; }
+  .hero-scroll-hint { margin-top: 20px; }
   .hero-eyebrow { margin-bottom: 12px; }
   .hero-logo { margin-bottom: 16px; }
   .hero-sub { font-size: 1rem; margin-bottom: 24px; }
