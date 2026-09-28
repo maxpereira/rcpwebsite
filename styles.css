@@ -1326,7 +1326,8 @@ p.checkin-note,
   white-space: nowrap;
 }
 .event-text p.checkin-note { margin-top: 1rem; margin-bottom: 0; }
-.vol-cta-block p.checkin-note { margin-bottom: 24px; }
+/* display: table keeps the pill shrink-wrapped but on its own line, above the button */
+.vol-cta-block p.checkin-note { display: table; margin: 0 auto 24px; }
 @media (max-width: 640px) {
   .announcement-text { min-width: 0; }
 }
