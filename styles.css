@@ -135,12 +135,24 @@ section { padding: 100px 0; position: relative; }
   padding: 20px 0;
   transition: all var(--transition);
 }
-#navbar.scrolled {
+/* Background + blur live on a pseudo-element: backdrop-filter on #navbar itself
+   would trap the fixed full-screen mobile menu inside the navbar's box. */
+#navbar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0;
   background: rgba(44, 74, 30, 0.96);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
+  transition: opacity var(--transition);
+}
+#navbar.scrolled {
   padding: 12px 0;
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
+#navbar.scrolled::before { opacity: 1; }
 .nav-inner {
   max-width: 1180px;
   margin: 0 auto;
@@ -199,6 +211,8 @@ section { padding: 100px 0; position: relative; }
   border: none;
   cursor: pointer;
   padding: 4px;
+  position: relative;
+  z-index: 1000;
 }
 .hamburger span {
   display: block;
@@ -1293,15 +1307,19 @@ footer {
 #past-next { background: var(--green-dark); }
 
 /* --- Check-in cutoff note --- */
+/* Matches .section-tag.light so it sits seamlessly beside "Our Next Event Is Set!" */
 p.checkin-note,
 .event-text p.checkin-note,
 .vol-cta-block p.checkin-note {
   display: inline-block;
-  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
   font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  line-height: 1.7;
   color: var(--tan);
-  background: rgba(201, 168, 124, 0.18);
-  border: 1px solid rgba(201, 168, 124, 0.4);
+  background: rgba(201, 168, 124, 0.2);
   padding: 4px 14px;
   border-radius: 50px;
   margin: 0 0 12px;
@@ -1310,5 +1328,13 @@ p.checkin-note,
 .event-text p.checkin-note { margin-top: 1rem; margin-bottom: 0; }
 .vol-cta-block p.checkin-note { margin-bottom: 24px; }
 @media (max-width: 640px) {
-  p.checkin-note, .event-text p.checkin-note, .vol-cta-block p.checkin-note { font-size: 0.8rem; padding: 4px 12px; }
+  .announcement-text { min-width: 0; }
+}
+@media (max-width: 400px) {
+  p.checkin-note, .event-text p.checkin-note, .vol-cta-block p.checkin-note { letter-spacing: 0.06em; padding: 4px 11px; }
+  #event-announcement .container { padding: 0 1rem; }
+  #past-next .vol-cta-block { padding: 44px 18px; }
+}
+@media (max-width: 340px) {
+  p.checkin-note, .event-text p.checkin-note, .vol-cta-block p.checkin-note { white-space: normal; }
 }
