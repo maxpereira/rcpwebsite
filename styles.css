@@ -1178,8 +1178,8 @@ footer {
   text-align: center;
   background: linear-gradient(135deg, #1a3310 0%, var(--green-dark) 50%, var(--green-mid) 100%);
 }
-.page-hero-content { position: relative; z-index: 2; max-width: 760px; }
-.page-hero-content h1 { color: var(--cream); margin-bottom: 20px; }
+.page-hero-content { position: relative; z-index: 2; max-width: 1000px; }
+.page-hero-content h1 { color: var(--cream); margin-bottom: 20px; text-wrap: balance; }
 .page-hero-content .hero-eyebrow {
   font-size: 0.8rem;
   font-weight: 600;
