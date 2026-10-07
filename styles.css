@@ -247,6 +247,7 @@ section { padding: 100px 0; position: relative; }
 .announcement-text p.checkin-note { margin: 0; }
 .announcement-org { color: rgba(245, 240, 232, 0.85); margin: 0; }
 .announcement-org strong { color: var(--cream); font-weight: 600; }
+.announcement-org a, .event-text .lead a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 .announcement-btn { flex-shrink: 0; white-space: nowrap; }
 
 /* =========================================
