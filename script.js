@@ -11,9 +11,9 @@ window.addEventListener('scroll', updateNavbar);
 updateNavbar(); // run immediately so hash-linked page loads show the nav correctly
 
 // --- Size hero to fit below the event banner on first view ---
-const announcement = document.getElementById('event-announcement');
+const announcementBanners = ['event-announcement', 'nonprofit-announcement'].map(id => document.getElementById(id));
 function updateAnnounceHeight() {
-  const h = announcement ? announcement.offsetHeight : 0;
+  const h = announcementBanners.reduce((sum, el) => sum + (el ? el.offsetHeight : 0), 0);
   document.documentElement.style.setProperty('--announce-h', h + 'px');
 }
 window.addEventListener('resize', updateAnnounceHeight);

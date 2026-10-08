@@ -251,6 +251,49 @@ section { padding: 100px 0; position: relative; }
 .announcement-btn { flex-shrink: 0; white-space: nowrap; }
 
 /* =========================================
+   NONPROFIT ANNOUNCEMENT
+   ========================================= */
+#nonprofit-announcement {
+  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-mid) 100%);
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+#nonprofit-announcement::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(115deg, transparent 0 28px, rgba(201, 168, 124, 0.07) 28px 56px);
+  pointer-events: none;
+}
+.nonprofit-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: rgba(245, 240, 232, 0.08);
+  border: 1px solid var(--tan);
+  border-radius: var(--radius-lg);
+  padding: 20px 32px;
+  box-shadow: 0 0 0 4px rgba(201, 168, 124, 0.15);
+}
+.nonprofit-seal {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.9rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #E6CFA5, var(--tan));
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+.nonprofit-text h2 { color: var(--cream); margin: 8px 0 4px; font-size: clamp(1.4rem, 2.6vw, 1.95rem); line-height: 1.2; }
+.nonprofit-text p { color: rgba(245, 240, 232, 0.88); margin: 0; }
+.nonprofit-text strong { color: var(--tan); font-weight: 600; }
+
+/* =========================================
    HERO
    ========================================= */
 #hero {
@@ -1156,6 +1199,10 @@ footer {
   .announcement-text h2 { font-size: 1.35rem; margin: 6px 0 2px; }
   .announcement-org { font-size: 0.9rem; line-height: 1.5; }
   .announcement-btn { padding: 11px 24px; }
+  .nonprofit-inner { padding: 16px 20px; gap: 14px; flex-direction: column; align-items: flex-start; }
+  .nonprofit-seal { width: 48px; height: 48px; font-size: 1.4rem; }
+  .nonprofit-text p { font-size: 0.92rem; line-height: 1.5; }
+  #nonprofit-announcement { padding: 14px 0; }
   #event-announcement { padding: 84px 0 16px; }
   #hero { padding: 28px 1.25rem 20px; }
   .hero-scroll-hint { margin-top: 20px; }
