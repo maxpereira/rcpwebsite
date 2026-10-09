@@ -615,7 +615,7 @@ section { padding: 100px 0; position: relative; }
 /* =========================================
    FIRST EVENT
    ========================================= */
-#next-event { background: var(--cream); }
+#next-event { background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-mid) 100%); }
 .event-card {
   background: linear-gradient(135deg, var(--brown-dark) 0%, var(--brown-mid) 100%);
   border-radius: var(--radius-lg);
