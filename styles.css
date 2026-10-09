@@ -490,7 +490,7 @@ section { padding: 100px 0; position: relative; }
 /* =========================================
    FIX & VOLUNTEER (combined)
    ========================================= */
-#repairs { background: var(--cream-dark); }
+#what-we-fix { background: var(--cream-dark); }
 
 .repair-grid {
   display: grid;
@@ -615,7 +615,7 @@ section { padding: 100px 0; position: relative; }
 /* =========================================
    FIRST EVENT
    ========================================= */
-#first-event { background: var(--cream); }
+#next-event { background: var(--cream); }
 .event-card {
   background: linear-gradient(135deg, var(--brown-dark) 0%, var(--brown-mid) 100%);
   border-radius: var(--radius-lg);
@@ -682,8 +682,8 @@ section { padding: 100px 0; position: relative; }
 /* =========================================
    DONATE
    ========================================= */
-#first-event { padding: 60px 0; }
-#donate { background: var(--cream-dark); overflow: hidden; padding-top: 60px; }
+#next-event { padding: 60px 0; }
+#get-involved { background: var(--cream-dark); overflow: hidden; padding-top: 60px; }
 .donate-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -783,10 +783,10 @@ section { padding: 100px 0; position: relative; }
 /* =========================================
    CONTACT
    ========================================= */
-#contact { background: var(--green-dark); }
-#contact .section-header h2 { color: var(--cream); }
-#contact .section-tag { color: var(--tan); background: rgba(201, 168, 124, 0.2); }
-#contact .section-sub { color: rgba(245, 240, 232, 0.75); max-width: 540px; }
+#stay-in-the-loop { background: var(--green-dark); }
+#stay-in-the-loop .section-header h2 { color: var(--cream); }
+#stay-in-the-loop .section-tag { color: var(--tan); background: rgba(201, 168, 124, 0.2); }
+#stay-in-the-loop .section-sub { color: rgba(245, 240, 232, 0.75); max-width: 540px; }
 .vol-cta-block {
   text-align: center;
   padding: 60px 40px;
@@ -1080,7 +1080,7 @@ footer {
 /* =========================================
    SOCIAL
    ========================================= */
-#social { background: var(--cream-dark); }
+#follow-us { background: var(--cream-dark); }
 .social-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
