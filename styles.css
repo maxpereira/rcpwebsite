@@ -686,7 +686,7 @@ section { padding: 100px 0; position: relative; }
 #donate { background: var(--cream-dark); overflow: hidden; padding-top: 60px; }
 .donate-grid {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 1fr;
   gap: 32px;
   align-items: stretch;
 }

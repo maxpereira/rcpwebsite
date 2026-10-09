@@ -6,7 +6,7 @@ This is the website for **Repair Café of the Peninsula (RCP)**, a free, grassro
 
 Visitors bring broken items and work hands-on alongside skilled volunteer repair coaches to fix them together.
 
-The site covers what RCP is, the repair disciplines we support, volunteer roles, tool donation needs, and a sign-up form for anyone who wants to get involved or stay in the loop.
+The site covers what RCP is, the repair disciplines we support, volunteer roles, and a sign-up form for anyone who wants to get involved or stay in the loop.
 
 ---
 
