@@ -1202,6 +1202,7 @@ footer {
   .nonprofit-inner { padding: 16px 20px; gap: 14px; flex-direction: column; align-items: flex-start; }
   .nonprofit-seal { width: 48px; height: 48px; font-size: 1.4rem; }
   .nonprofit-text p { font-size: 0.92rem; line-height: 1.5; }
+  .nonprofit-text .desktop-br { display: none; }
   #nonprofit-announcement { padding: 14px 0; }
   #event-announcement { padding: 84px 0 16px; }
   #hero { padding: 28px 1.25rem 20px; }
