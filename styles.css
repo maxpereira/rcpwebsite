@@ -1382,7 +1382,7 @@ p.checkin-note,
 }
 @media (max-width: 400px) {
   p.checkin-note, .event-text p.checkin-note, .vol-cta-block p.checkin-note { letter-spacing: 0.06em; padding: 4px 11px; }
-  #event-announcement .container { padding: 0 1rem; }
+  #event-announcement .container, #nonprofit-announcement .container { padding: 0 1rem; }
   #past-next .vol-cta-block { padding: 44px 18px; }
 }
 @media (max-width: 340px) {
