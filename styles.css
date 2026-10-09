@@ -1161,7 +1161,7 @@ footer {
   .announcement-btn { text-align: center; }
   .footer-inner { grid-template-columns: 1fr; text-align: center; }
   .footer-legal { text-align: center; max-width: 100%; }
-  .footer-brand { justify-content: center; }
+  .footer-brand { align-items: center; }
   .tool-list { grid-template-columns: 1fr; }
 }
 
