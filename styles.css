@@ -1339,11 +1339,31 @@ footer {
 }
 .past-teaser-text h2 { color: var(--green-dark); margin: 12px 0 16px; }
 .past-teaser-text p { color: var(--text-mid); margin-bottom: 24px; }
+.past-photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 56px;
+}
+.past-photos img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  background: var(--cream);
+}
 
 @media (max-width: 900px) {
   .past-event-card, .past-teaser { grid-template-columns: 1fr; gap: 28px; }
   .past-event-card { padding: 28px 22px; }
   #event-recap .stat-grid { grid-template-columns: repeat(2, 1fr); }
+  .past-photos { grid-template-columns: repeat(2, 1fr); margin-top: 40px; }
+}
+@media (max-width: 640px) {
+  .past-photos { gap: 10px; }
 }
 @media (max-width: 640px) {
   .page-hero-content .hero-eyebrow { letter-spacing: 0.08em; font-size: 0.72rem; }
