@@ -298,13 +298,13 @@ section { padding: 100px 0; position: relative; }
    ========================================= */
 #hero {
   min-height: 100vh;
-  min-height: calc(100svh - var(--announce-h, 0px));
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 40px 2rem 28px;
+  padding: 80px 2rem 32px;
   text-align: center;
   flex-direction: column;
 }
@@ -344,6 +344,27 @@ section { padding: 100px 0; position: relative; }
   max-width: 860px;
   margin: auto 0;
 }
+.hero-photos {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 auto 40px;
+}
+.hero-photos picture { flex: 0 1 156px; min-width: 0; }
+.hero-photos img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 3px solid rgba(245, 240, 232, 0.92);
+  border-radius: 10px;
+  background: var(--green-dark);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transform: rotate(-2deg);
+}
+.hero-photos picture:nth-child(even) img { transform: rotate(2deg) translateY(6px); }
+.hero-photos picture:nth-child(3) img { transform: none; }
 .hero-eyebrow {
   font-size: clamp(0.5rem, 2.5vw, 0.8rem);
   font-weight: 600;
@@ -360,8 +381,8 @@ section { padding: 100px 0; position: relative; }
 }
 .hero-logo {
   width: min(820px, 90vw);
-  /* shrink on short screens so logo, buttons and scroll hint all fit (logo is ~4.5:1) */
-  width: clamp(240px, calc((100svh - var(--announce-h, 0px) - 400px) * 4.48), min(820px, 90vw));
+  /* shrink on short screens so photos, logo, buttons and scroll hint all fit (logo is ~4.5:1) */
+  width: clamp(240px, calc((100svh - 620px) * 4.48), min(820px, 90vw));
   height: auto;
   margin-bottom: 24px;
   filter: drop-shadow(0 2px 20px rgba(0,0,0,0.35));
@@ -1205,7 +1226,9 @@ footer {
   .nonprofit-text .desktop-br { display: none; }
   #nonprofit-announcement { padding: 14px 0; }
   #event-announcement { padding: 84px 0 16px; }
-  #hero { padding: 28px 1.25rem 20px; }
+  #hero { padding: 56px 1.25rem 24px; }
+  .hero-photos { gap: 10px; margin-bottom: 28px; }
+  .hero-photos picture:nth-child(n+4) { display: none; }
   .hero-scroll-hint { margin-top: 20px; }
   .hero-eyebrow { margin-bottom: 12px; }
   .hero-logo { margin-bottom: 16px; }

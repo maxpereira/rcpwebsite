@@ -10,16 +10,6 @@ function updateNavbar() {
 window.addEventListener('scroll', updateNavbar);
 updateNavbar(); // run immediately so hash-linked page loads show the nav correctly
 
-// --- Size hero to fit below the event banner on first view ---
-const announcementBanners = ['event-announcement', 'nonprofit-announcement'].map(id => document.getElementById(id));
-function updateAnnounceHeight() {
-  const h = announcementBanners.reduce((sum, el) => sum + (el ? el.offsetHeight : 0), 0);
-  document.documentElement.style.setProperty('--announce-h', h + 'px');
-}
-window.addEventListener('resize', updateAnnounceHeight);
-window.addEventListener('load', updateAnnounceHeight);
-updateAnnounceHeight();
-
 // --- Hamburger menu ---
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.nav-links');
