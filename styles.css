@@ -1444,3 +1444,40 @@ p.checkin-note,
 @media (max-width: 340px) {
   p.checkin-note, .event-text p.checkin-note, .vol-cta-block p.checkin-note { white-space: normal; }
 }
+
+/* --- In the News --- */
+#in-the-news { background: var(--cream); }
+.press-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 520px));
+  justify-content: center;
+  gap: 24px;
+}
+.press-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px 36px;
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid rgba(44, 74, 30, 0.1);
+  border-left: 4px solid var(--tan);
+  box-shadow: var(--shadow);
+  color: inherit;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.press-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); color: inherit; }
+.press-outlet {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--brown-mid);
+}
+.press-card h3 { font-size: 1.5rem; color: var(--green-dark); }
+.press-link { font-weight: 600; font-size: 0.95rem; color: var(--green-mid); margin-top: 4px; }
+@media (max-width: 640px) {
+  .press-grid { grid-template-columns: 1fr; }
+  .press-card { padding: 26px 22px; }
+  .press-card h3 { font-size: 1.3rem; }
+}
