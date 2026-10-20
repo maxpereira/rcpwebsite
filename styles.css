@@ -300,7 +300,9 @@ section { padding: 100px 0; position: relative; }
   /* Fill the screen below the event banner. Photos and logo split whatever height is left
      after the fixed-size content (eyebrow, tagline, buttons, scroll hint, padding). */
   --hero-avail: calc(100svh - var(--announce-h, 0px) - var(--hero-chrome, 330px));
-  --hero-photo-h: clamp(72px, calc(var(--hero-avail) * 0.58), 210px);
+  /* photos grow with the screen: bounded by the height left over, by five-across fitting the
+     width (with some side margin), and by an overall cap so they stay sharp on huge monitors */
+  --hero-photo-h: max(72px, min(calc(var(--hero-avail) * 0.58), calc((min(100vw, 3000px) - 8rem - 64px) / 5 * 3 / 4), 420px));
   min-height: 100vh;
   min-height: calc(100svh - var(--announce-h, 0px));
   display: flex;
@@ -345,7 +347,7 @@ section { padding: 100px 0; position: relative; }
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 1240px;
+  width: 100%;
   margin: auto 0;
 }
 .hero-photos {
