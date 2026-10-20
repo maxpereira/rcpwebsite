@@ -1450,7 +1450,7 @@ p.checkin-note,
 #in-the-news { background: var(--cream); }
 .press-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 480px));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 400px));
   justify-content: center;
   gap: 40px;
 }
@@ -1459,7 +1459,7 @@ p.checkin-note,
   --newsprint: #FBF8EF;
   display: flex;
   flex-direction: column;
-  padding: 28px 30px 24px;
+  padding: 22px 24px 18px;
   background: var(--newsprint);
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(30, 26, 20, 0.12), 0 10px 30px rgba(44, 74, 30, 0.14);
@@ -1473,9 +1473,9 @@ p.checkin-note,
   box-shadow: 0 1px 2px rgba(30, 26, 20, 0.12), 0 16px 40px rgba(44, 74, 30, 0.2);
   color: var(--ink);
 }
-.press-logo { display: flex; justify-content: center; padding-bottom: 14px; }
+.press-logo { display: flex; justify-content: center; padding-bottom: 12px; }
 /* multiply drops the logo's white background onto the newsprint */
-.press-logo img { display: block; width: auto; max-width: 100%; height: 88px; mix-blend-mode: multiply; }
+.press-logo img { display: block; width: auto; max-width: 100%; height: 64px; mix-blend-mode: multiply; }
 .press-dateline {
   display: flex;
   justify-content: space-between;
@@ -1489,8 +1489,8 @@ p.checkin-note,
   text-transform: uppercase;
 }
 .press-card h3 {
-  margin: 18px 0 16px;
-  font-size: 1.75rem;
+  margin: 14px 0 12px;
+  font-size: 1.45rem;
   font-weight: 900;
   line-height: 1.12;
   text-align: center;
@@ -1499,12 +1499,12 @@ p.checkin-note,
 .press-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  padding-bottom: 16px;
+  gap: 14px;
+  padding-bottom: 12px;
   border-bottom: 1px solid rgba(30, 26, 20, 0.25);
 }
 .press-halftone {
-  min-height: 72px;
+  min-height: 40px;
   background:
     radial-gradient(circle, rgba(30, 26, 20, 0.5) 1.1px, transparent 1.5px) 0 0 / 5px 5px,
     rgba(30, 26, 20, 0.05);
@@ -1513,10 +1513,10 @@ p.checkin-note,
 }
 .press-greek { display: flex; flex-direction: column; justify-content: space-between; gap: 6px; }
 .press-greek i { display: block; height: 5px; background: rgba(30, 26, 20, 0.16); border-radius: 1px; }
-.press-greek i:nth-child(3n) { width: 92%; }
+.press-greek i:nth-child(2) { width: 92%; }
 .press-greek i:last-child { width: 55%; }
 .press-link {
-  margin-top: 14px;
+  margin-top: 10px;
   align-self: flex-end;
   font-size: 0.85rem;
   font-weight: 600;
@@ -1525,8 +1525,8 @@ p.checkin-note,
 .press-card:hover .press-link { color: var(--green-dark); }
 @media (max-width: 640px) {
   .press-grid { grid-template-columns: 1fr; }
-  .press-card { padding: 22px 20px 20px; }
-  .press-logo img { height: auto; max-height: 72px; }
-  .press-card h3 { font-size: 1.4rem; }
+  .press-card { padding: 20px 18px 16px; }
+  .press-logo img { height: auto; max-height: 56px; }
+  .press-card h3 { font-size: 1.3rem; }
   .press-dateline { font-size: 0.6rem; letter-spacing: 0.08em; white-space: nowrap; }
 }
