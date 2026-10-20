@@ -1467,6 +1467,15 @@ p.checkin-note,
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .press-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); color: inherit; }
+.press-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 22px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid rgba(44, 74, 30, 0.1);
+}
+.press-logo img { display: block; width: auto; max-width: 100%; height: 96px; object-fit: contain; }
 .press-outlet {
   font-size: 0.75rem;
   font-weight: 600;
@@ -1480,4 +1489,5 @@ p.checkin-note,
   .press-grid { grid-template-columns: 1fr; }
   .press-card { padding: 26px 22px; }
   .press-card h3 { font-size: 1.3rem; }
+  .press-logo img { height: auto; max-height: 80px; }
 }
