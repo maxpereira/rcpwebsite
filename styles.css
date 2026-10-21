@@ -354,7 +354,8 @@ section { padding: 100px 0; position: relative; }
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin: 0 auto 28px;
+  /* the tilted photos poke below their box by a few percent of their size, so grow the gap with them */
+  margin: 0 auto calc(30px + var(--hero-photo-h) * 0.08);
 }
 .hero-photos picture { flex: 0 1 calc(var(--hero-photo-h) * 4 / 3); min-width: 0; }
 .hero-photos img {
