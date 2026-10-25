@@ -85,6 +85,8 @@ img { height: auto; }
 /* photos cropped to fill a fixed-shape frame */
 .frame picture { width: 100%; height: 100%; }
 .frame img { width: 100%; height: 100%; object-fit: cover; }
+/* portrait photos in wide frames: keep faces in view */
+.pos-top img { object-position: 50% 20%; }
 
 h1, h2, h3 {
   font-family: var(--font-display);
@@ -303,6 +305,7 @@ a:hover { color: var(--green); }
 .hero-photo, .hero-photo img { position: absolute; inset: 0; width: 100%; height: 100%; }
 .hero-photo { z-index: -2; }
 .hero-photo img { object-fit: cover; object-position: 50% 35%; }
+.hero-photo.pos-top img { object-position: 50% 22%; }
 .hero::after {
   content: '';
   position: absolute;
@@ -872,6 +875,8 @@ a:hover { color: var(--green); }
 }
 .photo-grid li { overflow: hidden; border-radius: var(--radius); background: var(--paper-deep); }
 .photo-grid li:first-child { grid-column: span 2; grid-row: span 2; }
+/* five photos: let the fourth stretch so the last row has no gap */
+.photo-grid li:first-child:nth-last-child(5) ~ li:nth-child(4) { grid-column: span 2; }
 .photo-grid--pair { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: clamp(220px, 32vw, 440px); }
 .photo-grid--pair li:first-child { grid-column: auto; grid-row: auto; }
 .after-ticket { margin-top: 2rem; }
@@ -1068,6 +1073,7 @@ a:hover { color: var(--green); }
   .stat-row li:nth-child(3) { padding-left: 0; border-left: 0; }
   .photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 38vw; }
   .photo-grid li:first-child { grid-row: span 1; }
+  .photo-grid li:first-child:nth-last-child(5) ~ li:nth-child(4) { grid-column: auto; }
   .photo-grid--pair { grid-template-columns: minmax(0, 1fr); grid-auto-rows: 66vw; }
   .photo-grid--pair li:first-child { grid-column: auto; }
   .timeline { grid-template-columns: minmax(0, 1fr); }
