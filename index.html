@@ -15,15 +15,15 @@
   <meta name="twitter:title" content="Repair Café of the Peninsula" />
   <meta name="twitter:description" content="Free community repair events along the San Francisco Peninsula. Bring your broken items and fix them alongside skilled volunteer repair coaches. Next event: Saturday, November 21, 2026, 3-6 PM in San Carlos (check-in closes at 5:30 PM)." />
   <meta name="twitter:image" content="https://repaircafepeninsula.org/images/ogthumb.png" />
-  <meta name="theme-color" content="#3D6B2A" />
+  <meta name="theme-color" content="#2C4A1E" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Event",
     "name": "Repair Café of the Peninsula",
     "description": "Free community repair event. Bring a broken item and fix it together with a volunteer. Check-in closes at 5:30 PM.",
-    "startDate": "2026-10-24T15:00:00-07:00",
-    "endDate": "2026-10-24T18:00:00-07:00",
+    "startDate": "2026-11-21T15:00:00-08:00",
+    "endDate": "2026-11-21T18:00:00-08:00",
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
@@ -54,11 +54,10 @@
   }
   </script>
   <link rel="icon" href="images/favicon.png" type="image/png" />
-  <link rel="stylesheet" href="styles.css?v=20261025a" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  
+  <link rel="preload" href="fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" as="image" type="image/webp" imagesrcset="images/events/2026-10/bike-640.webp 640w, images/events/2026-10/bike-1024.webp 1024w, images/events/2026-10/bike-1600.webp 1600w, images/events/2026-10/bike-2400.webp 2400w" imagesizes="100vw" />
+  <link rel="stylesheet" href="styles.css?v=20261025b" />
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7F52SY3J4R"></script>
   <script>
@@ -68,325 +67,275 @@
 
     gtag('config', 'G-7F52SY3J4R');
   </script>
-  
+
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- NAV -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo">
-        <img src="images/rcp.png" alt="Repair Café of the Peninsula" class="nav-logo-img" />
-      </a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#what-we-fix">What We Fix</a></li>
-        <li><a href="#next-event">Next Event</a></li>
-        <li><a href="#mission">Mission</a></li>
-        <li><a href="#get-involved">Get Involved</a></li>
-        <li><a href="volunteer/" class="nav-cta">Volunteer</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- EVENT ANNOUNCEMENT / VOLUNTEER CTA -->
-  <section id="event-announcement">
-    <div class="container">
-      <div class="announcement-inner reveal">
-        <div class="announcement-text">
-          <div class="announcement-tags">
-            <span class="section-tag light">Our Next Event Is Set!</span>
-            <p class="checkin-note">&#9888;&#65039; Check-in closes at 5:30 PM</p>
-          </div>
-          <h2>Saturday, November 21 &middot; 3&ndash;6 PM</h2>
-          <p class="announcement-org">Callis &amp; Elaine Community Center &middot; <strong><a href="https://maps.app.goo.gl/JHcbE9kSkkTuWCHcA" target="_blank" rel="noopener">1336A Arroyo Ave, San Carlos, CA</a></strong></p>
-        </div>
-        <a href="https://www.signupgenius.com/go/20F0D4FADA82BA5FCC70-67063634-rcpnov" target="_blank" rel="noopener" class="btn btn-primary btn-tan announcement-btn">Sign Up to Volunteer &rarr;</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content reveal">
-      <div class="hero-photos">
-        <picture>
-          <source type="image/webp" srcset="images/events/2026-09/hero-waving-400.webp 400w, images/events/2026-09/hero-waving-800.webp 800w" sizes="(max-width: 640px) 30vw, min(20vw, 560px)" />
-          <img src="images/events/2026-09/hero-waving-800.jpg" alt="Sewing volunteers waving from the textile repair table" width="800" height="600" />
-        </picture>
-        <picture>
-          <source type="image/webp" srcset="images/events/2026-09/hero-lit-400.webp 400w, images/events/2026-09/hero-lit-800.webp 800w, images/events/2026-09/hero-lit-1200.webp 1200w" sizes="(max-width: 640px) 30vw, min(20vw, 560px)" />
-          <img src="images/events/2026-09/hero-lit-800.jpg" alt="Volunteers and a visitor applauding a freshly repaired lamp" width="800" height="600" />
-        </picture>
-        <picture>
-          <source type="image/webp" srcset="images/events/2026-09/hero-teamwork-400.webp 400w, images/events/2026-09/hero-teamwork-800.webp 800w, images/events/2026-09/hero-teamwork-1200.webp 1200w" sizes="(max-width: 640px) 30vw, min(20vw, 560px)" />
-          <img src="images/events/2026-09/hero-teamwork-800.jpg" alt="A volunteer and a visitor opening up an espresso machine together" width="800" height="600" />
-        </picture>
-        <picture>
-          <source type="image/webp" srcset="images/events/2026-09/hero-fan-400.webp 400w, images/events/2026-09/hero-fan-667.webp 667w" sizes="(max-width: 640px) 30vw, min(20vw, 560px)" />
-          <img src="images/events/2026-09/hero-fan-667.jpg" alt="A volunteer and a visitor working on a small electronics repair" width="667" height="500" />
-        </picture>
-        <picture>
-          <source type="image/webp" srcset="images/events/2026-09/hero-focus-400.webp 400w, images/events/2026-09/hero-focus-800.webp 800w, images/events/2026-09/hero-focus-1200.webp 1200w" sizes="(max-width: 640px) 30vw, min(20vw, 560px)" />
-          <img src="images/events/2026-09/hero-focus-800.jpg" alt="A visitor working on an espresso machine surrounded by tools" width="800" height="600" />
-        </picture>
-      </div>
-      <p class="hero-eyebrow">Your Neighbors Know How to Fix Things.</p>
-      <img src="images/rcp.png" alt="Repair Café of the Peninsula" class="hero-logo" />
-      <p class="hero-sub">Bringing neighbors together to fix what's broken, reduce waste, and keep skills alive.</p>
-      <div class="hero-btns">
-        <a href="#next-event" class="btn btn-primary btn-tan">See Next Event</a>
-        <a href="http://eepurl.com/ggrhJO5w3i" target="_blank" rel="noopener" class="btn btn-secondary">Join the Mailing List</a>
-      </div>
-    </div>
-    <div class="hero-scroll-hint">
-      <span>Scroll to explore</span>
-      <div class="scroll-arrow"></div>
-    </div>
-    <div class="hero-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">What Is This?</span>
-        <h2>What Is a Repair Café?</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p class="lead">A Repair Café is a free community gathering where people bring broken items and work alongside skilled volunteers to fix them together, hands-on.</p>
-          <p>Born in Amsterdam in 2009, Repair Cafés have spread to almost 4,000 locations worldwide. The idea is simple: instead of throwing something away, bring it in. Volunteer repair coaches (people with real skills in electronics, sewing, mechanics, and more) sit down with you, assess the problem together, and guide you through the repair process. <a href="https://www.repaircafe.org/en" target="_blank" rel="noopener">Learn more about the Repair Café Foundation &rarr;</a></p>
-          <p><strong>This isn't a drop-off service.</strong> You roll up your sleeves, work alongside the volunteer, and leave knowing both how to fix your item and a little more about how it works. The volunteer is your guide; you both work together to complete the repair.</p>
-          <p>Best of all: <strong>it's free</strong>. No charges, no appointments, no judgment! Donations are appreciated to cover our operating costs.</p>
-        </div>
-        <div class="about-cards reveal">
-          <div class="fact-card">
-            <div class="fact-icon">&#127759;</div>
-            <div class="fact-num">~4,000</div>
-            <div class="fact-label">Repair Cafés worldwide</div>
-            <div class="fact-source">via repaircafe.org</div>
-          </div>
-          <div class="fact-card">
-            <div class="fact-icon">&#9851;</div>
-            <div class="fact-num">~70%</div>
-            <div class="fact-label">of items successfully repaired</div>
-            <div class="fact-source">via repaircafe.org</div>
-          </div>
-          <div class="fact-card">
-            <div class="fact-icon">&#128154;</div>
-            <div class="fact-num">Free</div>
-            <div class="fact-label">Always free for visitors</div>
-          </div>
-          <div class="fact-card">
-            <div class="fact-icon">&#127795;</div>
-            <div class="fact-num">Less Waste</div>
-            <div class="fact-label">Items fixed, not trashed</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- NONPROFIT ANNOUNCEMENT -->
-  <section id="nonprofit-announcement">
-    <div class="container">
-      <div class="nonprofit-inner reveal">
-        <div class="nonprofit-seal" aria-hidden="true">&#127881;</div>
-        <div class="nonprofit-text">
-          <span class="section-tag light">Big News</span>
-          <h2>We&rsquo;re officially a California nonprofit!</h2>
-          <p>Repair Caf&eacute; of the Peninsula was incorporated as a California nonprofit corporation on <strong>October 6, 2026</strong>.<br class="desktop-br"> Thank you to everyone who helped get us here.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHAT WE FIX -->
-  <section id="what-we-fix">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Bring It In</span>
-        <h2>What We Fix</h2>
-        <p class="section-sub">Got something broken? Bring it and get your hands dirty alongside a volunteer repair coach.</p>
-      </div>
-
-      <div class="repair-grid">
-
-        <div class="repair-card">
-          <div class="repair-card-header">
-            <span class="repair-icon">&#128268;</span>
-            <div>
-              <h3>Electronics &amp; Small Appliances</h3>
-            </div>
-          </div>
-          <p class="repair-desc">Lamps, fans, radios, chargers, headphones, and similar small appliances: if it plugs in or runs on batteries, bring it in and work with a volunteer to diagnose and fix it.</p>
-        </div>
-
-        <div class="repair-card">
-          <div class="repair-card-header">
-            <span class="repair-icon">&#129523;</span>
-            <div>
-              <h3>Sewing &amp; Textiles</h3>
-            </div>
-          </div>
-          <p class="repair-desc">Torn seams, missing buttons, frayed hems, and worn fabric: bring your clothing, bags, and soft goods and stitch them back together with a volunteer guiding the way.</p>
-        </div>
-
-        <div class="repair-card">
-          <div class="repair-card-header">
-            <span class="repair-icon">&#127968;</span>
-            <div>
-              <h3>Furniture &amp; Wood</h3>
-            </div>
-          </div>
-          <p class="repair-desc">Wobbly chairs, broken hinges, stuck drawers: bring it in and get hands-on with a volunteer to stabilize, reattach, and restore it together.</p>
-        </div>
-
-        <div class="repair-card">
-          <div class="repair-card-header">
-            <span class="repair-icon">&#128690;</span>
-            <div>
-              <h3>Bicycles</h3>
-            </div>
-          </div>
-          <p class="repair-desc">Flat tires, slipping chains, squeaky or weak brakes, and gears that won't shift: wheel your bike in and work with a volunteer to tune it up and get it rolling safely again.</p>
-        </div>
-
-        <div class="repair-card">
-          <div class="repair-card-header">
-            <span class="repair-icon">&#127981;</span>
-            <div>
-              <h3>Toys, Ceramics, Jewelry &amp; Everything Else</h3>
-            </div>
-          </div>
-          <p class="repair-desc">Broken toys, chipped mugs, cracked ceramics, broken necklaces, loose clasps, games missing pieces, and the household things that don't fit anywhere else. Roll up your sleeves and puzzle it out with a volunteer, and if it truly can't be fixed, we'll tell you honestly.</p>
-        </div>
-
-      </div>
-
-      <div class="no-bring reveal">
-        <h4>&#128683; Please don't bring:</h4>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="./" class="brand"><img src="images/rcp-700.png" alt="Repair Café of the Peninsula" width="700" height="156" /></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav"><span class="menu-icon" aria-hidden="true"></span>Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
         <ul>
-          <li>Large appliances</li>
-          <li>Earbuds, mobile phones, cameras, and watches</li>
-          <li>Toasters or ovens</li>
-          <li>Three-phase power tools</li>
-          <li>Sewing alterations — we do repairs only, not alterations or resizing</li>
-          <li>Broken items missing critical parts that can't reasonably be sourced</li>
-          
-          <li>Vehicles or motorized equipment</li>
-          <li>Items in hazardous condition (leaking batteries, cracked screens, mold)</li>
+          <li><a href="#about">How it works</a></li>
+          <li><a href="#what-we-fix">What to bring</a></li>
+          <li><a href="past-events/">Past events</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="volunteer/" class="nav-cta">Volunteer</a></li>
         </ul>
-        <p>If you're unsure, email us at <img src="images/contact.png" alt="info@repaircafepeninsula.org" class="contact-email-img" /> before the event.</p>
-      </div>
-
-
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- FIRST EVENT -->
-  <section id="next-event">
-    <div class="container">
-      <div class="event-card reveal">
-        <div class="event-text">
-          <span class="section-tag light">Mark Your Calendar</span>
-          <h2>Our Next Event</h2>
-          <p class="lead">Our next Repair Café is happening <strong>Saturday, November 21st, 2026, from 3&ndash;6 PM</strong> at the Callis &amp; Elaine Community Center in San Carlos.</p>
-          <p class="lead"><strong><a href="https://maps.app.goo.gl/JHcbE9kSkkTuWCHcA" target="_blank" rel="noopener">1336A Arroyo Ave, San Carlos, CA</a></strong></p>
-          <p class="checkin-note">&#9888;&#65039; Check-in closes at 5:30 PM</p>
-          <p>Free and drop-in for visitors, no appointment needed. Want to help make it happen? Sign up to volunteer, or join our mailing list for reminders and updates.</p>
-          <div class="event-btns">
-            <a href="https://www.signupgenius.com/go/20F0D4FADA82BA5FCC70-67063634-rcpnov" target="_blank" rel="noopener" class="btn btn-primary btn-tan">Sign Up to Volunteer &rarr;</a>
-            <a href="http://eepurl.com/ggrhJO5w3i" target="_blank" rel="noopener" class="btn btn-secondary">Get Email Reminders</a>
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <picture class="hero-photo">
+        <source type="image/webp" srcset="images/events/2026-10/bike-640.webp 640w, images/events/2026-10/bike-1024.webp 1024w, images/events/2026-10/bike-1600.webp 1600w, images/events/2026-10/bike-2400.webp 2400w" sizes="100vw" />
+        <img src="images/events/2026-10/bike-1024.jpg" alt="Two volunteers tuning up a mint-green bicycle with a wicker basket outside the community center" width="1024" height="768" fetchpriority="high" />
+      </picture>
+      <div class="wrap hero-content">
+        <h1>Your neighbors know how to <em>fix things.</em></h1>
+        <p class="hero-sub">Repair Café of the Peninsula is a free, monthly repair event in San Carlos. Bring something broken and fix it side by side with a volunteer.</p>
+      </div>
+    </section>
+
+    <!-- NEXT EVENT -->
+    <div class="wrap ticket-overlap" id="next-event">
+      <div class="ticket">
+        <div class="ticket-date" aria-hidden="true">
+          <span class="ticket-dow">Sat</span>
+          <span class="ticket-day">21</span>
+          <span class="ticket-month">Nov</span>
+        </div>
+        <div class="ticket-info">
+          <p class="kicker">Next Repair Café</p>
+          <h2 class="ticket-title">Saturday, November 21 &middot; 3&ndash;6 PM</h2>
+          <p class="ticket-where"><a href="https://maps.app.goo.gl/JHcbE9kSkkTuWCHcA" target="_blank" rel="noopener">Callis &amp; Elaine Community Center, 1336A Arroyo Ave, San Carlos</a></p>
+          <p class="ticket-note">Free and drop-in. <strong>Check-in closes at 5:30 PM.</strong></p>
+        </div>
+        <div class="ticket-actions">
+          <a href="https://www.signupgenius.com/go/20F0D4FADA82BA5FCC70-67063634-rcpnov" target="_blank" rel="noopener" class="btn">Volunteer at this event</a>
+          <a href="http://eepurl.com/ggrhJO5w3i" target="_blank" rel="noopener" class="link-arrow">Get a reminder</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="cols intro">
+          <div>
+            <p class="kicker">What is a Repair Café?</p>
+            <h2>Bring it broken. Fix it <em>together.</em></h2>
+          </div>
+          <div>
+            <p class="lead">A Repair Café is a free community gathering where people bring broken things and work alongside skilled volunteers to fix them, hands-on.</p>
+            <p><strong>It isn't a drop-off service.</strong> You sit down with a volunteer, figure out what's wrong together, and do the repair with their guidance, so you leave knowing a little more about how your things work. The idea started in Amsterdam in 2009, and there are now almost 4,000 Repair Cafés worldwide. <a href="https://www.repaircafe.org/en" target="_blank" rel="noopener">Learn about the movement</a>.</p>
           </div>
         </div>
-        <div class="event-visual">
-          <div class="event-badge">
-            <div class="badge-inner">
-              <span class="badge-label">Join Us</span>
-              <span class="badge-season">Nov 21</span>
-              <span class="badge-year">2026</span>
-              <span class="badge-where">San Carlos, CA</span>
+
+        <ol class="steps">
+          <li class="step">
+            <figure class="step-photo frame">
+              <picture>
+                <source type="image/webp" srcset="images/events/2026-09/hero-focus-400.webp 400w, images/events/2026-09/hero-focus-800.webp 800w" sizes="(max-width: 960px) 90vw, 380px" />
+                <img src="images/events/2026-09/hero-focus-800.jpg" alt="A visitor working on his espresso machine, surrounded by tools" width="800" height="600" loading="lazy" decoding="async" />
+              </picture>
+            </figure>
+            <div>
+              <h3><span class="step-num">1</span> Bring one broken thing</h3>
+              <p>A lamp that flickers, a jacket with a torn seam, a chair that wobbles. No appointment needed: just check in at the door and we'll find you a seat.</p>
             </div>
+          </li>
+          <li class="step">
+            <figure class="step-photo frame">
+              <picture>
+                <source type="image/webp" srcset="images/events/2026-10/sewing-machine-640.webp 640w, images/events/2026-10/sewing-machine-1024.webp 1024w" sizes="(max-width: 960px) 90vw, 380px" />
+                <img src="images/events/2026-10/sewing-machine-1024.jpg" alt="A visitor guiding fabric through a sewing machine at the textile repair table" width="1024" height="768" loading="lazy" decoding="async" />
+              </picture>
+            </figure>
+            <div>
+              <h3><span class="step-num">2</span> Fix it side by side</h3>
+              <p>We pair you with a volunteer who knows that kind of repair. You do the work and they guide you through it. Simple fixes take 15 minutes; tricky ones can take an hour or more.</p>
+            </div>
+          </li>
+          <li class="step">
+            <figure class="step-photo frame">
+              <picture>
+                <source type="image/webp" srcset="images/events/2026-09/hero-waving-400.webp 400w, images/events/2026-09/hero-waving-800.webp 800w" sizes="(max-width: 960px) 90vw, 380px" />
+                <img src="images/events/2026-09/hero-waving-800.jpg" alt="Sewing volunteers waving from the textile repair table" width="800" height="600" loading="lazy" decoding="async" />
+              </picture>
+            </figure>
+            <div>
+              <h3><span class="step-num">3</span> Meet your neighbors</h3>
+              <p>Chat with the people at your table and cheer when something comes back to life. Of the 79 items brought to our first two events, 56 went home working.</p>
+            </div>
+          </li>
+        </ol>
+
+        <ul class="facts">
+          <li><strong>Free</strong> <span>Always, for everyone</span></li>
+          <li><strong>Drop-in</strong> <span>No appointment needed</span></li>
+          <li><strong>One item</strong> <span>Per person, per visit</span></li>
+          <li><strong>3&ndash;6 PM</strong> <span>Check-in closes at 5:30</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WHAT WE FIX -->
+    <section class="section section--deep" id="what-we-fix">
+      <div class="wrap cols">
+        <div class="sticky">
+          <p class="kicker">Bring it in</p>
+          <h2>What we fix</h2>
+          <p class="lead">If you can carry it in and you're ready to roll up your sleeves, there's a good chance we can help.</p>
+          <figure class="fix-photo frame">
+            <picture>
+              <source type="image/webp" srcset="images/events/2026-09/electronics-480.webp 480w, images/events/2026-09/electronics-800.webp 800w" sizes="(max-width: 960px) 90vw, 460px" />
+              <img src="images/events/2026-09/electronics-800.jpg" alt="Visitors and volunteers working on electronics repairs around a table of tools" width="800" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+        </div>
+        <div>
+          <ul class="fix-list">
+            <li>
+              <svg class="fix-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3v4M15 3v4M7 7h10v3.5a5 5 0 0 1-10 0V7zM12 15.5V21"/></svg>
+              <div>
+                <h3>Electronics &amp; small appliances</h3>
+                <p>Lamps, fans, radios, chargers, headphones and similar small appliances. If it plugs in or runs on batteries, bring it in and diagnose it with a volunteer.</p>
+              </div>
+            </li>
+            <li>
+              <svg class="fix-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="9.6" cy="9.6" r="1.1"/><circle cx="14.4" cy="9.6" r="1.1"/><circle cx="9.6" cy="14.4" r="1.1"/><circle cx="14.4" cy="14.4" r="1.1"/></svg>
+              <div>
+                <h3>Sewing &amp; textiles</h3>
+                <p>Torn seams, missing buttons, frayed hems and worn fabric. Bring your clothing, bags and soft goods and stitch them back together with a volunteer guiding the way.</p>
+              </div>
+            </li>
+            <li>
+              <svg class="fix-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10v8H7zM5.5 11h13v3h-13zM7 14v7M17 14v7M7 18h10"/></svg>
+              <div>
+                <h3>Furniture &amp; wood</h3>
+                <p>Wobbly chairs, broken hinges, stuck drawers. Get hands-on with a volunteer to stabilize, reattach and restore it together.</p>
+              </div>
+            </li>
+            <li>
+              <svg class="fix-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="16" r="3.5"/><circle cx="18.5" cy="16" r="3.5"/><path d="M5.5 16h5.5l4.5-7.5H9.5M11 16 8.5 6M18.5 16l-3-10h2.5M7 6h3"/></svg>
+              <div>
+                <h3>Bicycles</h3>
+                <p>Flat tires, slipping chains, weak brakes and gears that won't shift. Wheel your bike in and tune it up with a volunteer so it rolls safely again.</p>
+              </div>
+            </li>
+            <li>
+              <svg class="fix-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 9h11v6a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5V9zM15.5 11h1.5a2.5 2.5 0 0 1 0 5h-1.5M9 9.5l1.6 2.5-1.2 1.8 1.4 2.4M8.5 3.5c-.8 1 .8 2 0 3M12 3.5c-.8 1 .8 2 0 3"/></svg>
+              <div>
+                <h3>Toys, ceramics, jewelry &amp; everything else</h3>
+                <p>Broken toys, chipped mugs, snapped necklaces, loose clasps and the household things that don't fit anywhere else. If it truly can't be fixed, we'll tell you honestly.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="no-bring">
+            <h3>Please leave at home</h3>
+            <ul>
+              <li>Large appliances</li>
+              <li>Earbuds, phones, cameras and watches</li>
+              <li>Toasters or ovens</li>
+              <li>Three-phase power tools</li>
+              <li>Sewing alterations or resizing (repairs only)</li>
+              <li>Items missing critical parts that can't reasonably be sourced</li>
+              <li>Vehicles or motorized equipment</li>
+              <li>Anything hazardous: leaking batteries, cracked screens, mold</li>
+            </ul>
+            <p>Not sure? Email <img src="images/email.svg" alt="info@repaircafepeninsula.org" class="email-img" width="189" height="16" /> before the event.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-
-  <!-- PAST EVENTS TEASER -->
-  <section id="past-events">
-    <div class="container">
-      <div class="past-teaser reveal">
-        <div class="past-teaser-text">
-          <span class="section-tag">Looking Back</span>
-          <h2>See How Our Last Event Went</h2>
-          <p>On October 24th, neighbors brought 41 broken items to our second Repair Café in San Carlos, and together with our volunteers we fixed 31 of them, keeping over 250 lb out of the landfill. Check out the numbers and photos from our events so far.</p>
-          <a href="past-events/" class="btn btn-primary">See Past Events &rarr;</a>
+    <!-- SO FAR -->
+    <section class="section section--dark" id="past-events">
+      <div class="wrap">
+        <div class="impact-head">
+          <div>
+            <p class="kicker">Two events in</p>
+            <h2>What we&rsquo;ve fixed <em>together</em> so far</h2>
+          </div>
+          <a href="past-events/" class="btn btn--ghost-light">See event recaps</a>
         </div>
-        <div class="stat-grid">
-          <div class="stat-tile stat-feature">
-            <span class="stat-value">250<span class="stat-unit">lb</span>7<span class="stat-unit">oz</span></span>
-            <span class="stat-label">Waste Diverted</span>
-          </div>
-          <div class="stat-tile">
-            <span class="stat-value">41</span>
-            <span class="stat-label">Items</span>
-          </div>
-          <div class="stat-tile stat-fixed">
-            <span class="stat-value">31</span>
-            <span class="stat-label">Fixed</span>
-          </div>
-          <div class="stat-tile">
-            <span class="stat-value">76%</span>
-            <span class="stat-label">Fix Rate</span>
-          </div>
+
+        <ul class="tally">
+          <li><span class="tally-num">79</span><span class="tally-label">Items brought in</span></li>
+          <li><span class="tally-num">56</span><span class="tally-label">Fixed and back in use</span></li>
+          <li><span class="tally-num">71%</span><span class="tally-label">Fix rate</span></li>
+          <li><span class="tally-num">363<span class="tally-unit">lb</span></span><span class="tally-label">Kept out of the landfill</span></li>
+        </ul>
+
+        <ul class="gallery">
+          <li class="is-big frame">
+            <picture>
+              <source type="image/webp" srcset="images/events/2026-09/hero-teamwork-800.webp 800w, images/events/2026-09/hero-teamwork-1200.webp 1200w" sizes="(max-width: 640px) 100vw, 60vw" />
+              <img src="images/events/2026-09/hero-teamwork-800.jpg" alt="A volunteer and a visitor opening up an espresso machine together" width="800" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </li>
+          <li class="is-wide frame">
+            <picture>
+              <source type="image/webp" srcset="images/events/2026-09/lamp-480.webp 480w, images/events/2026-09/lamp-800.webp 800w" sizes="(max-width: 640px) 50vw, 40vw" />
+              <img src="images/events/2026-09/lamp-800.jpg" alt="Volunteers and a visitor applauding as a repaired lamp lights up" width="800" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </li>
+          <li class="is-wide frame">
+            <picture>
+              <source type="image/webp" srcset="images/events/2026-09/sewing-480.webp 480w, images/events/2026-09/sewing-800.webp 800w" sizes="(max-width: 640px) 50vw, 40vw" />
+              <img src="images/events/2026-09/sewing-800.jpg" alt="Sewing volunteers at the textile repair table with sewing machines" width="800" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </li>
+          <li class="frame">
+            <picture>
+              <source type="image/webp" srcset="images/events/2026-09/electronics-480.webp 480w, images/events/2026-09/electronics-800.webp 800w" sizes="(max-width: 640px) 50vw, 33vw" />
+              <img src="images/events/2026-09/electronics-800.jpg" alt="Visitors and volunteers working on electronics repairs around a table of tools" width="800" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </li>
+          <li class="frame">
+            <picture>
+              <source type="image/webp" srcset="images/events/2026-09/hero-focus-400.webp 400w, images/events/2026-09/hero-focus-800.webp 800w" sizes="(max-width: 640px) 50vw, 33vw" />
+              <img src="images/events/2026-09/hero-focus-800.jpg" alt="A visitor working on an espresso machine surrounded by tools" width="800" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </li>
+          <li class="frame">
+            <picture>
+              <source type="image/webp" srcset="images/events/2026-09/espresso-480.webp 480w, images/events/2026-09/espresso-800.webp 800w" sizes="(max-width: 640px) 50vw, 33vw" />
+              <img src="images/events/2026-09/espresso-800.jpg" alt="A volunteer and a visitor taking apart an espresso machine together" width="800" height="600" loading="lazy" decoding="async" />
+            </picture>
+          </li>
+        </ul>
+        <div class="gallery-foot">
+          <p>More photos:</p>
+          <a href="https://photos.app.goo.gl/HR2gGa9xL4tbJRPh7" target="_blank" rel="noopener" class="link-arrow link-out">September album</a>
+          <a href="https://photos.app.goo.gl/B6pGGAtTmrokaugG7" target="_blank" rel="noopener" class="link-arrow link-out">October album</a>
         </div>
       </div>
-      <div class="past-photos reveal">
-        <picture>
-          <source type="image/webp" srcset="images/events/2026-09/espresso-480.webp 480w, images/events/2026-09/espresso-800.webp 800w" sizes="(max-width: 900px) 50vw, 280px" />
-          <img src="images/events/2026-09/espresso-800.jpg" alt="A volunteer and a visitor taking apart an espresso machine together" width="800" height="600" loading="lazy" decoding="async" />
-        </picture>
-        <picture>
-          <source type="image/webp" srcset="images/events/2026-09/lamp-480.webp 480w, images/events/2026-09/lamp-800.webp 800w" sizes="(max-width: 900px) 50vw, 280px" />
-          <img src="images/events/2026-09/lamp-800.jpg" alt="Volunteers and a visitor applauding as a repaired lamp lights up" width="800" height="600" loading="lazy" decoding="async" />
-        </picture>
-        <picture>
-          <source type="image/webp" srcset="images/events/2026-09/electronics-480.webp 480w, images/events/2026-09/electronics-800.webp 800w" sizes="(max-width: 900px) 50vw, 280px" />
-          <img src="images/events/2026-09/electronics-800.jpg" alt="Visitors and volunteers working on electronics repairs around a table of tools" width="800" height="600" loading="lazy" decoding="async" />
-        </picture>
-        <picture>
-          <source type="image/webp" srcset="images/events/2026-09/sewing-480.webp 480w, images/events/2026-09/sewing-800.webp 800w" sizes="(max-width: 900px) 50vw, 280px" />
-          <img src="images/events/2026-09/sewing-800.jpg" alt="Sewing volunteers at the textile repair table with sewing machines" width="800" height="600" loading="lazy" decoding="async" />
-        </picture>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- IN THE NEWS -->
-  <section id="in-the-news">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Press</span>
-        <h2>In the News</h2>
-      </div>
-      <div class="press-grid reveal">
-        <a href="https://www.smdailyjournal.com/news/local/repair-cafe-of-the-peninsula-events-build-community/article_6f54edf8-956c-4357-a8b9-2dea8f61998d.html" target="_blank" rel="noopener" class="press-card">
+    <!-- IN THE NEWS -->
+    <section class="section" id="in-the-news">
+      <div class="wrap press">
+        <div>
+          <p class="kicker">In the news</p>
+          <blockquote>
+            <p>&ldquo;Repair Caf&eacute; of the Peninsula events build community&rdquo;</p>
+          </blockquote>
+          <p class="press-source">San Mateo Daily Journal, October 19, 2026 <a href="https://www.smdailyjournal.com/news/local/repair-cafe-of-the-peninsula-events-build-community/article_6f54edf8-956c-4357-a8b9-2dea8f61998d.html" target="_blank" rel="noopener" class="link-arrow link-out">Read the story</a></p>
+        </div>
+        <a href="https://www.smdailyjournal.com/news/local/repair-cafe-of-the-peninsula-events-build-community/article_6f54edf8-956c-4357-a8b9-2dea8f61998d.html" target="_blank" rel="noopener" class="press-card" aria-label="Read the San Mateo Daily Journal story">
           <div class="press-logo">
             <picture>
               <source type="image/webp" srcset="images/press/smdailyjournal.webp" />
-              <img src="images/press/smdailyjournal.jpg" alt="San Mateo Daily Journal logo" width="796" height="322" loading="lazy" decoding="async" />
+              <img src="images/press/smdailyjournal.jpg" alt="San Mateo Daily Journal" width="796" height="322" loading="lazy" decoding="async" />
             </picture>
           </div>
           <div class="press-dateline">
@@ -402,269 +351,209 @@
           <span class="press-link">Read the full story &#8599;</span>
         </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- MISSION -->
-  <section id="mission">
-    <div class="mission-bg-accent"></div>
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Why the Peninsula?</span>
-        <h2>Our Mission</h2>
+    <!-- VOLUNTEER -->
+    <section class="split" id="get-involved">
+      <div class="split-photo frame">
+        <picture>
+          <source type="image/webp" srcset="images/events/2026-09/hero-waving-400.webp 400w, images/events/2026-09/hero-waving-800.webp 800w" sizes="(max-width: 960px) 100vw, 50vw" />
+          <img src="images/events/2026-09/hero-waving-800.jpg" alt="Sewing volunteers waving from the textile repair table" width="800" height="600" loading="lazy" decoding="async" />
+        </picture>
       </div>
-      <div class="mission-intro reveal">
-        <p class="lead">The Peninsula is a vibrant, diverse region stretching along the Bay and the coast. But like everywhere else, we throw too much away.</p>
-        <div class="cities-list">
-          <span class="cities-label">We serve:</span>
-          <div class="cities-tags">
-            <span>Belmont</span><span>Burlingame</span><span>Daly City</span>
-            <span>Half Moon Bay</span><span>Menlo Park</span><span>Millbrae</span>
-            <span>Pacifica</span><span>Redwood City</span>
-            <span>San Bruno</span><span>San Carlos</span><span>San Mateo</span>
-            <span>South San Francisco</span><span>&amp; surrounding areas</span>
-          </div>
-        </div>
-      </div>
-      <div class="mission-pillars">
-        <div class="pillar">
-          <div class="pillar-icon">&#127960;&#65039;</div>
-          <h3>Build Community</h3>
-          <p>Create a welcoming space where people from all walks of life meet, connect, and share skills. Repair Cafés are as much about human connection as they are about fixing things.</p>
-        </div>
-        <div class="pillar">
-          <div class="pillar-icon">&#127807;</div>
-          <h3>Reduce Waste</h3>
-          <p>The Bay Area sends millions of pounds of electronics and household goods to landfill every year. We want to keep as many items as possible out of the waste stream, one repair at a time.</p>
-        </div>
-        <div class="pillar">
-          <div class="pillar-icon">&#128295;</div>
-          <h3>Revive Repair Skills</h3>
-          <p>We live in a throwaway culture. Our goal is to connect experienced fixers with people eager to learn; and make repair feel approachable, not intimidating.</p>
-        </div>
-        <div class="pillar">
-          <div class="pillar-icon">&#128205;</div>
-          <h3>Stay Local &amp; Grassroots</h3>
-          <p>We are a small, community-run effort with no corporate backing and no red tape. Just people who believe in fixing things and helping their neighbors.</p>
+      <div class="split-copy">
+        <p class="kicker">Get involved</p>
+        <h2>It all runs on <em>volunteers.</em></h2>
+        <p class="lead">Twenty neighbors volunteered at our October event. We&rsquo;d love for you to be one of them.</p>
+        <p>We need repair coaches who know their way around electronics, sewing, furniture, bikes and odds and ends. Just as important are the people who welcome visitors, keep the room running, take photos and spread the word. Most roles need no repair skills at all.</p>
+        <ul class="role-list">
+          <li>Repair coaching</li>
+          <li>Welcome &amp; check-in</li>
+          <li>Event flow</li>
+          <li>Photography</li>
+          <li>Design &amp; social media</li>
+          <li>Flyers &amp; partnerships</li>
+        </ul>
+        <p>It&rsquo;s about 3&ndash;4 hours at a single event, with no ongoing commitment.</p>
+        <div class="btn-row">
+          <a href="https://www.signupgenius.com/go/20F0D4FADA82BA5FCC70-67063634-rcpnov" target="_blank" rel="noopener" class="btn">Sign up for Nov 21</a>
+          <a href="volunteer/" class="btn btn--ghost">See all roles</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- DONATE -->
-  <section id="get-involved">
-    <div class="donate-bg"></div>
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Join In</span>
-        <h2>Get Involved</h2>
-      </div>
-      <div class="donate-grid">
-        <div class="donate-secondary reveal">
-          <div class="donate-volunteer">
-            <span class="highlight-icon">&#129309;</span>
-            <h3>Volunteer With Us</h3>
-            <p>RCP runs entirely on the energy of people who give their time. We need repair experts across electronics, sewing, furniture, bicycles, and also designers, photographers, outreach helpers, and friendly faces to welcome visitors at the door.</p>
-            <p>You don't need to be a repair expert to make a huge difference. Most of our event support roles require nothing more than enthusiasm and a willingness to show up.</p>
-            <p><strong>Time commitment:</strong> roughly 3–4 hours at a single event, with no ongoing obligation.</p>
-            <a href="volunteer/" class="btn btn-primary">See All Volunteer Roles &rarr;</a>
-          </div>
+    <!-- MISSION -->
+    <section class="section" id="mission">
+      <div class="wrap cols">
+        <div class="mission-head sticky">
+          <p class="kicker">Why we do it</p>
+          <h2>Less waste, more neighbors who can <em>fix things.</em></h2>
+          <p class="lead">The Peninsula is a vibrant, diverse stretch of towns along the Bay and the coast. But like everywhere else, we throw too much away.</p>
+          <p class="mission-note">Repair Caf&eacute; of the Peninsula was incorporated as a California nonprofit corporation on October 6, 2026, and is applying for federal 501(c)(3) status.</p>
         </div>
-        <div class="donate-secondary reveal" style="display:none">
-          <div class="donate-money">
-            <span class="highlight-icon">&#128181;</span>
-            <h3>Monetary Donations</h3>
-            <p>We also welcome monetary contributions to help cover costs like venue fees, promotional materials, food and beverages for visitors and volunteers, and supplies we can't source through donations.</p>
-            <a href="http://eepurl.com/ggrhJO5w3i" target="_blank" rel="noopener" class="btn btn-outline">Get In Touch to Donate</a>
-            <div class="tax-disclaimer">
-              <span class="disclaimer-icon">&#9888;</span>
-              <p><strong>Important:</strong> Repair Café of the Peninsula is a California nonprofit corporation (incorporated October 6, 2026) and is in the process of applying for federal 501(c)(3) tax-exempt status. Until that status is granted, donations are <strong>not yet tax-deductible</strong>.</p>
+        <div>
+          <div class="pillars">
+            <div class="pillar">
+              <h3>Build community</h3>
+              <p>A welcoming space where people from all walks of life meet, connect and share skills. Repair Cafés are as much about human connection as they are about fixing things.</p>
+            </div>
+            <div class="pillar">
+              <h3>Reduce waste</h3>
+              <p>The Bay Area sends millions of pounds of electronics and household goods to landfill every year. We want to keep as much of it as we can in use, one repair at a time.</p>
+            </div>
+            <div class="pillar">
+              <h3>Revive repair skills</h3>
+              <p>We live in a throwaway culture. We connect experienced fixers with people eager to learn, and make repair feel approachable instead of intimidating.</p>
+            </div>
+            <div class="pillar">
+              <h3>Stay local &amp; grassroots</h3>
+              <p>We're a small, community-run effort with no corporate backing and no red tape. Just people who believe in fixing things and helping their neighbors.</p>
             </div>
           </div>
+          <p class="serving"><strong>Serving</strong> Belmont, Burlingame, Daly City, Half Moon Bay, Menlo Park, Millbrae, Pacifica, Redwood City, San Bruno, San Carlos, San Mateo, South San Francisco and the surrounding areas.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FAQ -->
-  <section id="faq">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Good Questions</span>
-        <h2>Frequently Asked Questions</h2>
+    <!-- FAQ -->
+    <section class="section section--deep" id="faq">
+      <div class="wrap cols">
+        <div class="faq-head sticky">
+          <p class="kicker">FAQ</p>
+          <h2>Good questions</h2>
+          <p>Something we haven't covered? Email <img src="images/email.svg" alt="info@repaircafepeninsula.org" class="email-img" width="189" height="16" /></p>
+        </div>
+        <div class="faq-list">
+          <details name="faq">
+            <summary>Do I need an appointment, or is it drop-in?</summary>
+            <div class="faq-answer">
+              <p>Drop-in, no appointment needed. Just show up during event hours with your item and we'll get you set up with a volunteer. We may ask you to add your name to a waitlist if things get busy, but there's no pre-registration.</p>
+            </div>
+          </details>
+          <details name="faq">
+            <summary>Is it really free?</summary>
+            <div class="faq-answer">
+              <p>Yes, completely free for visitors. Repair Cafés around the world work this way: skilled volunteers give their time, and the community benefits. We may have a tip jar or small donation box for those who want to contribute to future events, but it's never expected or required.</p>
+            </div>
+          </details>
+          <details name="faq">
+            <summary>How many items can I bring?</summary>
+            <div class="faq-answer">
+              <p>We ask that you bring one item per visit so that every visitor gets quality time working hands-on with a volunteer. If it's a quiet event, we're happy to tackle more.</p>
+            </div>
+          </details>
+          <details name="faq">
+            <summary>How long does a repair take?</summary>
+            <div class="faq-answer">
+              <p>It depends on the item. Simple fixes (a button, a loose connection) might take 15&ndash;20 minutes. More complex repairs can take an hour or more. You'll be working alongside the volunteer the whole time, so plan to stay and be hands-on.</p>
+            </div>
+          </details>
+          <details name="faq">
+            <summary>What if my item can't be fixed?</summary>
+            <div class="faq-answer">
+              <p>We'll always be upfront. If a repair is beyond what we can tackle together on the day (wrong tools, missing parts, or a fault that needs a specialist), we'll say so clearly and suggest next steps where we can. We never guarantee a fix, but you and your volunteer will always give it an honest best effort.</p>
+            </div>
+          </details>
+          <details name="faq">
+            <summary>How often are events held?</summary>
+            <div class="faq-answer">
+              <p>For now we're holding events <strong>monthly on a Saturday</strong>, same place and time: 3&ndash;6 PM at the Callis &amp; Elaine Community Center in San Carlos (<a href="https://maps.app.goo.gl/JHcbE9kSkkTuWCHcA" target="_blank" rel="noopener">1336A Arroyo Ave</a>). <strong>Check-in closes at 5:30 PM.</strong> The schedule can change, so always check this website for the next date.</p>
+              <p>Our next event is Saturday, November 21st, 2026. <a href="http://eepurl.com/ggrhJO5w3i" target="_blank" rel="noopener">Join our mailing list</a> for reminders and updates.</p>
+            </div>
+          </details>
+          <details name="faq">
+            <summary>I have repair skills. How do I get involved?</summary>
+            <div class="faq-answer">
+              <p>We'd love to have you. Have a look at our <a href="volunteer/">volunteer roles</a> and sign up for a slot at the next event, or <a href="http://eepurl.com/ggrhJO5w3i" target="_blank" rel="noopener">join our mailing list</a> to hear about future ones. We ask for roughly 3&ndash;4 hours at a single event, and no prior volunteering experience is needed.</p>
+            </div>
+          </details>
+          <details name="faq">
+            <summary>Are you a nonprofit organization?</summary>
+            <div class="faq-answer">
+              <p>Yes! Repair Café of the Peninsula was incorporated as a California nonprofit corporation on October 6, 2026. We're now applying for federal 501(c)(3) tax-exempt status, and until that's granted, donations are not yet tax-deductible. We appreciate your support regardless.</p>
+            </div>
+          </details>
+        </div>
       </div>
-      <div class="faq-list reveal">
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            Do I need an appointment, or is it drop-in?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Drop-in, no appointment needed. Just show up during event hours with your item and we'll get you set up with a volunteer. We may ask you to add your name to a waitlist if things get busy, but there's no pre-registration required.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            Is it really free?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes, completely free for visitors. Repair Cafés around the world operate on this principle: skilled volunteers give their time, and the community benefits. We may have a tip jar or small donation box for those who want to contribute to future events, but it is never expected or required.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            How many items can I bring?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>We ask that you bring a maximum of one item per visit so that every visitor gets quality time working hands-on with a volunteer. If it's a quiet event, we're happy to tackle more.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            How long does a repair take?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>It varies a lot depending on the item. Simple fixes (a button, a loose connection, etc.) might take 15–20 minutes. More complex repairs could take an hour or more. You'll be working alongside the volunteer the whole time, so plan to stay and be hands-on for the duration.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            What if my item can't be fixed?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>We'll always be upfront. If a repair is beyond what we can tackle together on the day (wrong tools, missing parts, or a fault that needs a specialist), we'll say so clearly and suggest next steps where we can. We never guarantee a fix, but you and your volunteer will always give it an honest best effort.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            How often are events held?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>For the immediate future, we're holding events <strong>monthly on a Saturday</strong>, same place and time: 3&ndash;6 PM at the Callis &amp; Elaine Community Center in San Carlos (<a href="https://maps.app.goo.gl/JHcbE9kSkkTuWCHcA" target="_blank" rel="noopener">1336A Arroyo Ave</a>). <strong>Check-in closes at 5:30 PM.</strong> This schedule is subject to change, so always check this website for the next event date.</p>
-            <p>Our next event is Saturday, November 21st, 2026. <a href="http://eepurl.com/ggrhJO5w3i">Sign up for our mailing list</a> for reminders and updates.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            I have repair skills. How do I get involved as a volunteer?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>We'd love to have you. <a href="http://eepurl.com/ggrhJO5w3i">Sign up for our mailing list</a> and tell us a bit about your skills and we'll be in touch. We're looking for volunteers who can commit to roughly 3–4 hours at a single event. No prior volunteering experience needed.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            Are you a nonprofit organization?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes! Repair Café of the Peninsula was incorporated as a California nonprofit corporation on October 6, 2026. We are now in the process of applying for federal 501(c)(3) tax-exempt status, and until that status is granted, donations are not yet tax-deductible. We appreciate your support regardless.</p>
-          </div>
-        </div>
+    </section>
 
+    <!-- STAY IN TOUCH -->
+    <section class="section" id="stay-in-the-loop">
+      <div class="wrap cols touch">
+        <div class="touch-copy">
+          <p class="kicker">Stay in touch</p>
+          <h2>Get a heads&#8209;up before the next one.</h2>
+          <p class="lead">Join our mailing list to hear when we announce an event and when we need volunteers.</p>
+          <div class="btn-row">
+            <a href="http://eepurl.com/ggrhJO5w3i" target="_blank" rel="noopener" class="btn">Join the mailing list</a>
+          </div>
+        </div>
+        <ul class="social-list" id="follow-us" aria-label="Follow us">
+          <li>
+            <a href="https://www.instagram.com/repaircafepeninsula/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              <span><span class="social-name">Instagram</span><span class="social-handle">@repaircafepeninsula</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/repaircafepeninsula" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9h2.5V6H14c-1.93 0-3.5 1.57-3.5 3.5V12H8v3h2.5v6h3v-6H16l1-3h-3.5v-1.5c0-.55.45-1 1-1z"/></svg>
+              <span><span class="social-name">Facebook</span><span class="social-handle">Repair Café of the Peninsula</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://nextdoor.com/page/repair-cafe-of-the-peninsula" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9.5L12 4l9 5.5V20H3V9.5z"/><path d="M9 20v-6h6v6"/></svg>
+              <span><span class="social-name">Nextdoor</span><span class="social-handle">Repair Café of the Peninsula</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/repaircafepeninsula" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7"/><circle cx="7" cy="7" r="1" fill="currentColor" stroke="none"/><path d="M11 10v7m0-4c0-2 1.5-3 3-3s3 1 3 3v4"/></svg>
+              <span><span class="social-name">LinkedIn</span><span class="social-handle">repaircafepeninsula</span></span>
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="stay-in-the-loop">
-    <div class="container">
-      <div class="vol-cta-block reveal">
-        <span class="section-tag">Stay Updated</span>
-        <h2>Stay in the Loop</h2>
-        <p>Join our mailing list to be the first to know when we announce an event, and to hear about volunteer opportunities.</p>
-        <a href="http://eepurl.com/ggrhJO5w3i" target="_blank" rel="noopener" class="btn btn-primary">Join the Mailing List</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SOCIAL MEDIA -->
-  <section id="follow-us">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Stay Connected</span>
-        <h2>Follow Us</h2>
-        <p class="section-sub">Keep up with news, event announcements, and behind-the-scenes updates on our socials.</p>
-      </div>
-      <div class="social-grid reveal">
-        <a href="https://www.facebook.com/repaircafepeninsula" target="_blank" rel="noopener" class="social-card">
-          <div class="social-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9h2.5V6H14c-1.93 0-3.5 1.57-3.5 3.5V12H8v3h2.5v6h3v-6H16l1-3h-3.5v-1.5c0-.55.45-1 1-1z"/></svg>
-          </div>
-          <div class="social-info">
-            <h3>Facebook</h3>
-            <span class="social-handle">Repair Café of the Peninsula</span>
-          </div>
-          <span class="social-arrow">&#8599;</span>
-        </a>
-        <a href="https://www.instagram.com/repaircafepeninsula/" target="_blank" rel="noopener" class="social-card">
-          <div class="social-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-          </div>
-          <div class="social-info">
-            <h3>Instagram</h3>
-            <span class="social-handle">@repaircafepeninsula</span>
-          </div>
-          <span class="social-arrow">&#8599;</span>
-        </a>
-        <a href="https://nextdoor.com/page/repair-cafe-of-the-peninsula" target="_blank" rel="noopener" class="social-card">
-          <div class="social-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 4l9 5.5V20H3V9.5z"/><path d="M9 20v-6h6v6"/></svg>
-          </div>
-          <div class="social-info">
-            <h3>Nextdoor</h3>
-            <span class="social-handle">Repair Café of the Peninsula</span>
-          </div>
-          <span class="social-arrow">&#8599;</span>
-        </a>
-        <a href="https://www.linkedin.com/company/repaircafepeninsula" target="_blank" rel="noopener" class="social-card">
-          <div class="social-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7"/><circle cx="7" cy="7" r="1" fill="currentColor" stroke="none"/><path d="M11 10v7m0-4c0-2 1.5-3 3-3s3 1 3 3v4"/></svg>
-          </div>
-          <div class="social-info">
-            <h3>LinkedIn</h3>
-            <span class="social-handle">repaircafepeninsula</span>
-          </div>
-          <span class="social-arrow">&#8599;</span>
-        </a>
-      </div>
-    </div>
-  </section>
+  </main>
 
   <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="footer-inner">
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
         <div class="footer-brand">
-          <img src="images/rcp.png" alt="Repair Café of the Peninsula" class="footer-logo-img" />
-          <div class="footer-tagline">Your neighbors know how to fix things.</div>
+          <img src="images/rcp-light.png" alt="Repair Café of the Peninsula" width="700" height="156" loading="lazy" />
+          <p class="footer-tagline">Your neighbors know how to fix things.</p>
         </div>
-        <div class="footer-links">
-          <a href="#about">About</a>
-          <a href="#mission">Mission</a>
-          <a href="#what-we-fix">What We Fix</a>
-          <a href="past-events/">Past Events</a>
-          <a href="#in-the-news">In the News</a>
-          <a href="#get-involved">Get Involved</a>
-          <a href="#faq">FAQ</a>
-          <a href="#follow-us">Follow Us</a>
+        <div>
+          <p class="footer-title">Visit</p>
+          <ul class="footer-links">
+            <li><a href="#next-event">Next event</a></li>
+            <li><a href="#about">How it works</a></li>
+            <li><a href="#what-we-fix">What to bring</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
         </div>
-        <div class="footer-legal">
-          <p>Repair Café of the Peninsula (RCP) is a California nonprofit corporation and is in the process of applying for federal 501(c)(3) status. Donations are <strong>not yet tax-deductible</strong>.</p>
-          <p><img src="images/contact2.png" alt="Contact us" class="footer-contact-img" /></p>
-          <p>&copy; 2026 Repair Café of the Peninsula.</p>
-          <p>Inspired by the <a href="https://www.repaircafe.org/en" target="_blank" rel="noopener" style="color: rgba(245,240,232,0.55);">Repair Café International Foundation</a>.</p>
+        <div>
+          <p class="footer-title">Get involved</p>
+          <ul class="footer-links">
+            <li><a href="volunteer/">Volunteer</a></li>
+            <li><a href="past-events/">Past events</a></li>
+            <li><a href="#in-the-news">In the news</a></li>
+            <li><a href="#stay-in-the-loop">Mailing list &amp; socials</a></li>
+          </ul>
         </div>
+      </div>
+      <div class="footer-legal">
+        <p><img src="images/email-light.svg" alt="info@repaircafepeninsula.org" class="email-img" width="189" height="16" loading="lazy" /></p>
+        <p>Repair Café of the Peninsula (RCP) is a California nonprofit corporation and is in the process of applying for federal 501(c)(3) status. Donations are <strong>not yet tax-deductible</strong>.</p>
+        <p>&copy; 2026 Repair Café of the Peninsula. Inspired by the <a href="https://www.repaircafe.org/en" target="_blank" rel="noopener">Repair Café International Foundation</a>.</p>
       </div>
     </div>
   </footer>
 
-  <script src="script.js?v=20261013b"></script>
+  <script src="script.js?v=20261025b"></script>
 </body>
 </html>

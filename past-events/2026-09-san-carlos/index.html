@@ -15,12 +15,10 @@
   <meta name="twitter:title" content="Repair Café of the Peninsula - September 2026, San Carlos" />
   <meta name="twitter:description" content="Results and photos from our first Repair Café on September 26, 2026 in San Carlos: 38 items, 25 fixed, and over 112 lb of waste diverted from landfill." />
   <meta name="twitter:image" content="https://repaircafepeninsula.org/images/ogthumb.png" />
-  <meta name="theme-color" content="#3D6B2A" />
+  <meta name="theme-color" content="#2C4A1E" />
   <link rel="icon" href="../../images/favicon.png" type="image/png" />
-  <link rel="stylesheet" href="../../styles.css?v=20261025a" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" href="../../fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../../styles.css?v=20261025b" />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7F52SY3J4R"></script>
@@ -34,123 +32,190 @@
 
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- NAV -->
-  <nav id="navbar" class="scrolled">
-    <div class="nav-inner">
-      <a href="../../" class="nav-logo">
-        <img src="../../images/rcp.png" alt="Repair Café of the Peninsula" class="nav-logo-img" />
-      </a>
-      <ul class="nav-links">
-        <li><a href="../../#about">About</a></li>
-        <li><a href="../../#what-we-fix">What We Fix</a></li>
-        <li><a href="../../#next-event">Next Event</a></li>
-        <li><a href="../../#mission">Mission</a></li>
-        <li><a href="../../#get-involved">Get Involved</a></li>
-        <li><a href="../../volunteer/" class="nav-cta">Volunteer</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="../../" class="brand"><img src="../../images/rcp-700.png" alt="Repair Café of the Peninsula" width="700" height="156" /></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav"><span class="menu-icon" aria-hidden="true"></span>Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="../../#about">How it works</a></li>
+          <li><a href="../../#what-we-fix">What to bring</a></li>
+          <li><a href="../../past-events/" aria-current="page">Past events</a></li>
+          <li><a href="../../#faq">FAQ</a></li>
+          <li><a href="../../volunteer/" class="nav-cta">Volunteer</a></li>
+        </ul>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="hero-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-    </div>
-    <div class="page-hero-content">
-      <p class="breadcrumb"><a href="../">Past Events</a> &rsaquo; September 2026</p>
-      <p class="hero-eyebrow">Saturday, September 26, 2026 &middot; 3&ndash;6 PM</p>
-      <h1>Our First Repair Café</h1>
-      <p class="hero-sub">Callis &amp; Elaine Community Center, San Carlos</p>
-    </div>
-  </section>
+  <main id="main">
 
-  <!-- RECAP -->
-  <section id="event-recap">
-    <div class="container">
-      <div class="recap-intro">
-        <span class="section-tag">By the Numbers</span>
-        <h2 style="color: var(--green-dark); margin-top: 10px;">How It Went</h2>
+    <!-- HERO -->
+    <section class="hero hero--short">
+      <picture class="hero-photo">
+            <source type="image/webp" srcset="../../images/events/2026-09/hero-lit-400.webp 400w, ../../images/events/2026-09/hero-lit-800.webp 800w, ../../images/events/2026-09/hero-lit-1200.webp 1200w" sizes="100vw" />
+            <img src="../../images/events/2026-09/hero-lit-800.jpg" alt="Volunteers and a visitor applauding as a repaired lamp lights up" width="800" height="600" fetchpriority="high" />
+          </picture>
+      <div class="wrap hero-content">
+        <p class="breadcrumb"><a href="../">Past events</a> &rsaquo; September 2026</p>
+        <p class="hero-meta">Saturday, September 26, 2026 &middot; 3&ndash;6 PM &middot; San Carlos</p>
+        <h1>Our first Repair Caf&eacute;</h1>
       </div>
+    </section>
 
-      <div class="stat-grid">
-          <div class="stat-tile stat-feature">
-            <span class="stat-value">112<span class="stat-unit">lb</span>13<span class="stat-unit">oz</span></span>
-            <span class="stat-label">Waste Diverted</span>
+    <!-- RESULTS -->
+    <section class="section" id="event-recap">
+      <div class="wrap cols">
+        <div class="sticky">
+          <p class="kicker">By the numbers</p>
+          <h2>How it went</h2>
+          <p class="lead">28 neighbors brought 38 broken things to the Callis &amp; Elaine Community Center for our very first event.</p>
+        </div>
+        <div>
+          <div class="headline-stat">
+            <span class="headline-num">112<small>lb</small>13<small>oz</small></span>
+            <span class="headline-label">kept out of the landfill</span>
           </div>
-          <div class="stat-tile">
-            <span class="stat-value">28</span>
-            <span class="stat-label">Unique People</span>
+          <div class="outcome">
+            <p class="outcome-title">What happened to the 38 items</p>
+            <div class="outcome-bar" role="img" aria-label="Of 38 items: 25 fixed, 8 returned with repair instructions, 5 not fixed">
+            <span class="outcome-seg seg-fixed" style="flex: 25;" data-tip="Fixed: 25 of 38 (66%)">25</span>
+            <span class="outcome-seg seg-returned" style="flex: 8;" data-tip="Returned with instructions: 8 of 38 (21%)">8</span>
+            <span class="outcome-seg seg-notfixed is-light" style="flex: 5;" data-tip="Not fixed: 5 of 38 (13%)">5</span>
+            </div>
+            <ul class="outcome-legend">
+            <li class="seg-fixed">Fixed <strong>25</strong></li>
+            <li class="seg-returned">Returned with instructions <strong>8</strong></li>
+            <li class="seg-notfixed">Not fixed <strong>5</strong></li>
+            </ul>
           </div>
-          <div class="stat-tile">
-            <span class="stat-value">38</span>
-            <span class="stat-label">Total Items</span>
-          </div>
-          <div class="stat-tile">
-            <span class="stat-value">66%</span>
-            <span class="stat-label">Fix Rate</span>
-          </div>
-          <div class="stat-tile stat-fixed">
-            <span class="stat-value">25</span>
-            <span class="stat-label">Fixed</span>
-          </div>
-          <div class="stat-tile stat-notfixed">
-            <span class="stat-value">5</span>
-            <span class="stat-label">Not Fixed</span>
-          </div>
-          <div class="stat-tile stat-returned">
-            <span class="stat-value">8</span>
-            <span class="stat-label">Returned w/ Instructions</span>
-          </div>
+          <ul class="stat-row">
+          <li><strong>28</strong><span>Visitors</span></li>
+          <li><strong>38</strong><span>Items</span></li>
+          <li><strong>25</strong><span>Fixed</span></li>
+          <li><strong>66%</strong><span>Fix rate</span></li>
+          </ul>
+        </div>
       </div>
+    </section>
 
-      <div class="photo-cta">
-        <span class="section-tag light">Photos</span>
-        <h2>See the Day in Pictures</h2>
-        <p>Browse the photo album from our first event.</p>
-        <a href="https://photos.app.goo.gl/HR2gGa9xL4tbJRPh7" target="_blank" rel="noopener" class="btn btn-primary btn-tan">View Photo Album &rarr;</a>
+    <!-- PHOTOS -->
+    <section class="section section--deep" id="photos">
+      <div class="wrap">
+        <div class="impact-head">
+          <div>
+            <p class="kicker">Photos</p>
+            <h2>Scenes from the day</h2>
+          </div>
+          <a href="https://photos.app.goo.gl/HR2gGa9xL4tbJRPh7" target="_blank" rel="noopener" class="btn btn--ghost link-out">View the full album</a>
+        </div>
+        <ul class="photo-grid">
+          <li class="frame">
+          <picture>
+            <source type="image/webp" srcset="../../images/events/2026-09/hero-teamwork-400.webp 400w, ../../images/events/2026-09/hero-teamwork-800.webp 800w, ../../images/events/2026-09/hero-teamwork-1200.webp 1200w" sizes="(max-width: 640px) 50vw, 66vw" />
+            <img src="../../images/events/2026-09/hero-teamwork-800.jpg" alt="A volunteer and a visitor opening up an espresso machine together" width="800" height="600" loading="lazy" decoding="async" />
+          </picture>
+          </li>
+          <li class="frame">
+          <picture>
+            <source type="image/webp" srcset="../../images/events/2026-09/hero-waving-400.webp 400w, ../../images/events/2026-09/hero-waving-800.webp 800w" sizes="(max-width: 640px) 50vw, 33vw" />
+            <img src="../../images/events/2026-09/hero-waving-800.jpg" alt="Sewing volunteers waving from the textile repair table" width="800" height="600" loading="lazy" decoding="async" />
+          </picture>
+          </li>
+          <li class="frame">
+          <picture>
+            <source type="image/webp" srcset="../../images/events/2026-09/electronics-480.webp 480w, ../../images/events/2026-09/electronics-800.webp 800w" sizes="(max-width: 640px) 50vw, 33vw" />
+            <img src="../../images/events/2026-09/electronics-800.jpg" alt="Visitors and volunteers working on electronics repairs around a table of tools" width="800" height="600" loading="lazy" decoding="async" />
+          </picture>
+          </li>
+          <li class="frame">
+          <picture>
+            <source type="image/webp" srcset="../../images/events/2026-09/hero-focus-400.webp 400w, ../../images/events/2026-09/hero-focus-800.webp 800w, ../../images/events/2026-09/hero-focus-1200.webp 1200w" sizes="(max-width: 640px) 50vw, 33vw" />
+            <img src="../../images/events/2026-09/hero-focus-800.jpg" alt="A visitor working on an espresso machine surrounded by tools" width="800" height="600" loading="lazy" decoding="async" />
+          </picture>
+          </li>
+          <li class="frame">
+          <picture>
+            <source type="image/webp" srcset="../../images/events/2026-09/sewing-480.webp 480w, ../../images/events/2026-09/sewing-800.webp 800w" sizes="(max-width: 640px) 50vw, 33vw" />
+            <img src="../../images/events/2026-09/sewing-800.jpg" alt="Sewing volunteers at the textile repair table with sewing machines" width="800" height="600" loading="lazy" decoding="async" />
+          </picture>
+          </li>
+          <li class="frame">
+          <picture>
+            <source type="image/webp" srcset="../../images/events/2026-09/hero-fan-400.webp 400w, ../../images/events/2026-09/hero-fan-667.webp 667w" sizes="(max-width: 640px) 50vw, 33vw" />
+            <img src="../../images/events/2026-09/hero-fan-667.jpg" alt="A volunteer and a visitor working on a small electronics repair" width="667" height="500" loading="lazy" decoding="async" />
+          </picture>
+          </li>
+        </ul>
       </div>
+    </section>
 
-      <div class="recap-next">
-        <p>Missed it? Our next Repair Café is <strong>Saturday, November 21st, 3&ndash;6 PM</strong> in San Carlos. Check-in closes at 5:30 PM.</p>
-        <a href="../../#next-event" class="btn btn-primary">Next Event Details</a>
-        <a href="../" class="btn btn-outline">All Past Events</a>
+    <!-- NEXT EVENT -->
+    <section class="section" id="recap-next">
+      <div class="wrap">
+        <p class="kicker">Missed it?</p>
+        <h2 class="title-gap">Come to the next one</h2>
+        <div class="ticket">
+        <div class="ticket-date" aria-hidden="true">
+          <span class="ticket-dow">Sat</span>
+          <span class="ticket-day">21</span>
+          <span class="ticket-month">Nov</span>
+        </div>
+        <div class="ticket-info">
+          <p class="kicker">Next Repair Café</p>
+          <h2 class="ticket-title">Saturday, November 21 &middot; 3&ndash;6 PM</h2>
+          <p class="ticket-where"><a href="https://maps.app.goo.gl/JHcbE9kSkkTuWCHcA" target="_blank" rel="noopener">Callis &amp; Elaine Community Center, 1336A Arroyo Ave, San Carlos</a></p>
+          <p class="ticket-note">Free and drop-in. <strong>Check-in closes at 5:30 PM.</strong></p>
+        </div>
+        <div class="ticket-actions">
+          <a href="https://www.signupgenius.com/go/20F0D4FADA82BA5FCC70-67063634-rcpnov" target="_blank" rel="noopener" class="btn">Volunteer at this event</a>
+          <a href="http://eepurl.com/ggrhJO5w3i" target="_blank" rel="noopener" class="link-arrow">Get a reminder</a>
+        </div>
       </div>
-    </div>
-  </section>
+        <p class="after-ticket"><a href="../" class="link-arrow">All past events</a></p>
+      </div>
+    </section>
+
+  </main>
 
   <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="footer-inner">
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
         <div class="footer-brand">
-          <img src="../../images/rcp.png" alt="Repair Café of the Peninsula" class="footer-logo-img" />
-          <div class="footer-tagline">Your neighbors know how to fix things.</div>
+          <img src="../../images/rcp-light.png" alt="Repair Café of the Peninsula" width="700" height="156" loading="lazy" />
+          <p class="footer-tagline">Your neighbors know how to fix things.</p>
         </div>
-        <div class="footer-links">
-          <a href="../../#about">About</a>
-          <a href="../../#mission">Mission</a>
-          <a href="../../#what-we-fix">What We Fix</a>
-          <a href="../../past-events/">Past Events</a>
-          <a href="../../#get-involved">Get Involved</a>
-          <a href="../../#faq">FAQ</a>
-          <a href="../../#follow-us">Follow Us</a>
+        <div>
+          <p class="footer-title">Visit</p>
+          <ul class="footer-links">
+            <li><a href="../../#next-event">Next event</a></li>
+            <li><a href="../../#about">How it works</a></li>
+            <li><a href="../../#what-we-fix">What to bring</a></li>
+            <li><a href="../../#faq">FAQ</a></li>
+          </ul>
         </div>
-        <div class="footer-legal">
-          <p>Repair Café of the Peninsula (RCP) is a California nonprofit corporation and is in the process of applying for federal 501(c)(3) status. Donations are <strong>not yet tax-deductible</strong>.</p>
-          <p><img src="../../images/contact2.png" alt="Contact us" class="footer-contact-img" /></p>
-          <p>&copy; 2026 Repair Café of the Peninsula.</p>
-          <p>Inspired by the <a href="https://www.repaircafe.org/en" target="_blank" rel="noopener" style="color: rgba(245,240,232,0.55);">Repair Café International Foundation</a>.</p>
+        <div>
+          <p class="footer-title">Get involved</p>
+          <ul class="footer-links">
+            <li><a href="../../volunteer/">Volunteer</a></li>
+            <li><a href="../../past-events/">Past events</a></li>
+            <li><a href="../../#in-the-news">In the news</a></li>
+            <li><a href="../../#stay-in-the-loop">Mailing list &amp; socials</a></li>
+          </ul>
         </div>
+      </div>
+      <div class="footer-legal">
+        <p><img src="../../images/email-light.svg" alt="info@repaircafepeninsula.org" class="email-img" width="189" height="16" loading="lazy" /></p>
+        <p>Repair Café of the Peninsula (RCP) is a California nonprofit corporation and is in the process of applying for federal 501(c)(3) status. Donations are <strong>not yet tax-deductible</strong>.</p>
+        <p>&copy; 2026 Repair Café of the Peninsula. Inspired by the <a href="https://www.repaircafe.org/en" target="_blank" rel="noopener">Repair Café International Foundation</a>.</p>
       </div>
     </div>
   </footer>
 
-  <script src="../../script.js?v=20261013b"></script>
+  <script src="../../script.js?v=20261025b"></script>
 </body>
 </html>
