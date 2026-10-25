@@ -1320,6 +1320,9 @@ footer {
 .stat-fixed .stat-value { color: var(--green-mid); }
 .stat-notfixed .stat-value { color: #A63A2B; }
 .stat-returned .stat-value { color: #2F6690; }
+/* Eight tiles: feature shares the first row so the grid fills 3x3 */
+.stat-grid-wide-feature .stat-tile { display: flex; flex-direction: column; justify-content: center; }
+.stat-grid-wide-feature .stat-tile.stat-feature { grid-column: span 2; }
 
 /* --- Past events index --- */
 #past-events-list { background: var(--cream); }
@@ -1398,6 +1401,8 @@ footer {
   .past-event-card, .past-teaser { grid-template-columns: 1fr; gap: 28px; }
   .past-event-card { padding: 28px 22px; }
   #event-recap .stat-grid { grid-template-columns: repeat(2, 1fr); }
+  .stat-grid-wide-feature .stat-tile.stat-feature,
+  .stat-grid-wide-feature .stat-tile:last-child { grid-column: 1 / -1; }
   .past-photos { grid-template-columns: repeat(2, 1fr); margin-top: 40px; }
 }
 @media (max-width: 640px) {
