@@ -84,14 +84,16 @@ In each copy update `ticket-dow` (Sat), `ticket-day` (21), `ticket-month` (Nov),
   the visible link.
 
 **3. `index.html`**
-- `meta description`, `og:description`, `twitter:description`: "Next event: Saturday, November 21, 2026, 3-6 PM in San Carlos…"
+- `meta description`: "Next event: Saturday, November 21, 2026, 3-6 PM in San Carlos…". Leave the date out of
+  `og:description` and `twitter:description` on every page: apps cache link previews for weeks,
+  so a date there goes stale.
 - JSON-LD `startDate` / `endDate`. Use `-07:00` while daylight saving is on (second Sunday of
   March to the first Sunday of November) and `-08:00` otherwise.
 - The volunteer split button: "Sign up for Nov 21".
 - FAQ "How often are events held?": "Our next event is Saturday, November 21st, 2026."
 
 **4. `volunteer/index.html`**
-- The three meta descriptions.
+- The `meta description`.
 - Timeline step 1: "…you're on the schedule for November 21st."
 - The closing section: "…for Saturday, November 21st…"
 
