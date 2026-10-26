@@ -26,7 +26,7 @@ The owner sends updates in two shapes. Each has a checklist below:
 | `fonts/` | Self-hosted Fraunces (headings) and Inter (body) |
 | `images/events/YYYY-MM/` | Photos from that month's event |
 | `images/photos/` | Photos whose event isn't known |
-| `images/email.svg`, `email-light.svg` | The email address drawn as outlines (anti-scraping). Never write the address as plain text or `mailto:` |
+| `images/email.svg`, `email-light.svg` | The email address drawn as outlines (anti-scraping). Never write the address as plain text or `mailto:`, including in alt text: use `alt="info at repaircafepeninsula dot org"` |
 | `tools/make_photos.py` | Turns an original photo into the web sizes (see [Photos](#photos)) |
 | `sitemap.xml` | Every page with a `lastmod` date |
 
