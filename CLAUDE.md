@@ -28,6 +28,7 @@ The owner sends updates in two shapes. Each has a checklist below:
 | `images/photos/` | Photos whose event isn't known |
 | `images/email.svg`, `email-light.svg` | The email address drawn as outlines (anti-scraping). Never write the address as plain text or `mailto:`, including in alt text: use `alt="info at repaircafepeninsula dot org"` |
 | `tools/make_photos.py` | Turns an original photo into the web sizes (see [Photos](#photos)) |
+| `tools/make_share_image.py` | Crops a photo into the 1200×630 link-preview image (see [Share images](#share-images)) |
 | `sitemap.xml` | Every page with a `lastmod` date |
 
 Every page repeats the same header and footer markup, adjusted for its depth:
@@ -119,6 +120,7 @@ Input: the stats screenshot, ideally the event's Google Photos album link, and p
 **2. Photos.**
 - Process them into `images/events/YYYY-MM/` (see [Photos](#photos)).
 - Pick a landscape shot with a clear moment for the hero.
+- Make the recap's share image (see [Share images](#share-images)).
 
 **3. Create the recap page.**
 Copy the most recent recap to `past-events/YYYY-MM-<city>/index.html` (city in kebab-case,
@@ -127,6 +129,8 @@ e.g. `san-carlos`). Then change these, keeping the structure:
 - `<title>` and `og:title` / `twitter:title`: `Repair Café of the Peninsula - <Month> <Year>, <City>`
 - the three descriptions: `Results and photos from our <ordinal> Repair Café on <Month D, YYYY> in <City>: <Items> items, <Fixed> fixed, and over <lb> lb of waste diverted from landfill.`
 - `og:url`
+- `og:image` and `twitter:image`: the event's share image. `og:image:alt` and `twitter:image:alt`:
+  that photo's alt text.
 - **Hero:**
   - Swap the photo; it stays eager-loaded with `fetchpriority="high"`. For a portrait photo add
     `pos-top` to `<picture class="hero-photo">`.
@@ -194,6 +198,24 @@ python3 tools/make_photos.py <original> images/events/2026-11 <kebab-name>
 - **Alt text:** describe what's happening ("A volunteer and a visitor opening up an espresso
   machine together"). Don't name people, even when name tags are visible. Don't call someone a
   volunteer unless that's known.
+
+### Share images
+
+The picture shown when a page's link is shared (Facebook, iMessage, LinkedIn, Slack…). Each recap
+uses a photo from its own event. The home, volunteer and past-events pages share one image,
+currently `images/events/2026-09/espresso-repair-share.jpg`.
+
+```
+python3 tools/make_share_image.py images/events/2026-11/<kebab-name>-2400.webp images/events/2026-11 <kebab-name> [FOCUS]
+```
+
+- Writes `<kebab-name>-share.jpg` at 1200×630. `FOCUS` picks which part of the height to keep
+  (0 = top, 0.5 = middle); lower it if heads are cut off, then look at the result.
+- Pick a photo with one clear subject near the middle: some apps show only a square from the
+  center.
+- When swapping a page's share image, also update its `og:image:alt` / `twitter:image:alt`, and on
+  the home page the JSON-LD `image`. Use a new file name rather than overwriting the old image, or
+  Facebook and LinkedIn keep showing their cached copy.
 
 ---
 
