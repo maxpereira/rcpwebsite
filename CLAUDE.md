@@ -247,7 +247,9 @@ These keep the site consistent. The redesign deliberately removed the "template"
   - Write "Repair Caf&eacute;" with the accent. The one exception is the footer's two legal lines
     (the 501(c)(3) line and the copyright line), which use no accents at all: the registered business
     name "Repair Cafe of the Peninsula", the EIN as `<span class="nowrap">(EIN 43-2309122)</span>`, and
-    "Repair Cafe International Foundation".
+    "Repair Cafe International Foundation". Above them, the footer lists the principal address
+    exactly as registered: "Principal address: 2108 N St, Ste N, Sacramento, CA 95816". Google for
+    Nonprofits checks for the EIN, this address and a mission statement, so keep all three.
   - Use "Check-in closes at 5:30 PM".
   - Don't state how many items to bring anywhere except the FAQ, which says "up to two items
     per person per event".
