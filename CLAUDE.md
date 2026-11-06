@@ -275,6 +275,9 @@ python3 -m http.server 8765        # then open http://127.0.0.1:8765/
   There should be no sideways scroll, and lazy images should appear as you scroll.
 - **Stale text:** grep for the old date, the old signup id and the old totals.
 - **Paths:** make sure every new image path exists. A typo in a `srcset` fails silently.
+- **Deploys:** each push to `main` runs GitHub's "pages build and deployment" workflow. If its
+  deploy step fails with "Deployment failed, try again later", that's on GitHub's side: re-run it, or
+  push the next change and the new deploy replaces it.
 
 ## Open items
 
