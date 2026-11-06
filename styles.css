@@ -711,7 +711,7 @@ a:hover { color: var(--green); }
 .site-footer { padding-block: 4rem 2.5rem; background: var(--green-deep); color: var(--on-dark); }
 .footer-top {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr));
   gap: 2.5rem;
   padding-bottom: 2.5rem;
   border-bottom: 1px solid var(--rule-light);
@@ -729,7 +729,6 @@ a:hover { color: var(--green); }
 .footer-legal strong { color: rgba(246, 241, 231, 0.8); }
 .footer-legal a { color: inherit; }
 .footer-legal a:hover { color: var(--paper); }
-.footer-legal .nowrap { white-space: nowrap; }
 
 /* =========================================
    SUBPAGE HEADERS
@@ -923,9 +922,9 @@ a:hover { color: var(--green); }
 .timeline p { font-size: 1rem; }
 .commitment { margin-top: clamp(2.5rem, 5vw, 3.5rem); padding-top: 1.5rem; border-top: 1px solid var(--rule); }
 
-.role-group { padding-block: clamp(3rem, 6vw, 4.5rem); border-top: 1px solid var(--rule); }
-.role-group:first-child { border-top: 0; padding-top: 0; }
-.role-group h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); margin-bottom: 1rem; }
+.role-group, .faq-group { padding-block: clamp(3rem, 6vw, 4.5rem); border-top: 1px solid var(--rule); }
+.role-group:first-child, .faq-group:first-child { border-top: 0; padding-top: 0; }
+.role-group h2, .faq-group h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); margin-bottom: 1rem; }
 .roles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.25rem 2.5rem; list-style: none; }
 .role { padding-top: 1.1rem; border-top: 2px solid var(--green); }
 .role h3 { margin-bottom: 0.4rem; }
@@ -964,6 +963,67 @@ a:hover { color: var(--green); }
 .closer .btn-row { justify-content: center; }
 
 /* =========================================
+   ABOUT, FAQ & CONTACT PAGES
+   ========================================= */
+/* the mission statement, set large on the About page */
+.mission-statement {
+  max-width: 34ch;
+  font-size: clamp(1.6rem, 3.1vw, 2.55rem);
+  font-weight: 500;
+  line-height: 1.25;
+  text-wrap: pretty;
+}
+
+/* ruled list of programs, each with a link */
+.program-list { border-top: 1px solid var(--rule); list-style: none; }
+.program-list li { padding-block: 1.6rem; border-bottom: 1px solid var(--rule); }
+.program-list h3 { margin-bottom: 0.4rem; }
+.program-list p { font-size: 1rem; }
+.program-list .link-arrow { margin-top: 0.75rem; font-size: 0.95rem; }
+
+/* label / value rows: organization and contact details */
+.details-list { border-top: 1px solid var(--rule); }
+.details-list > div {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: 0.35rem 1.5rem;
+  padding-block: 1.15rem;
+  border-bottom: 1px solid var(--rule);
+}
+.details-list dt {
+  padding-top: 0.2em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--clay);
+}
+.details-list dd { color: var(--ink); }
+.details-note { display: block; margin-top: 0.25rem; font-size: 0.92rem; color: var(--ink-muted); }
+.nowrap { white-space: nowrap; }
+
+/* ruled list of links to other pages (home page mission block) */
+.link-list { margin-top: 2rem; border-top: 1px solid var(--rule); list-style: none; }
+.link-list a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 1.1rem;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-variation-settings: 'SOFT' 50;
+  color: var(--green);
+  text-decoration: none;
+}
+.link-list a::after { content: '\2192'; font-family: var(--font-body); color: var(--clay); transition: transform var(--ease); }
+.link-list a:hover { color: var(--green-mid); }
+.link-list a:hover::after { transform: translateX(3px); }
+
+/* =========================================
    RESPONSIVE
    ========================================= */
 @media (max-width: 1080px) {
@@ -1000,7 +1060,7 @@ a:hover { color: var(--green); }
   .split-photo { min-height: 0; aspect-ratio: 4 / 3; }
   .split-copy { max-width: none; padding: clamp(3rem, 8vw, 4.5rem) var(--gutter); }
   .press-card { max-width: 400px; }
-  .footer-top { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .footer-top { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .footer-brand { grid-column: 1 / -1; }
   .event-row { grid-template-columns: minmax(0, 1fr); }
   .event-list li:nth-child(even) .event-cover { order: 0; }
@@ -1070,6 +1130,7 @@ a:hover { color: var(--green); }
   .pillars { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
   .faq-answer { padding-right: 0; }
   .footer-top { grid-template-columns: minmax(0, 1fr); }
+  .details-list > div { grid-template-columns: minmax(0, 1fr); }
   .stat-row { grid-auto-flow: row; grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 1.5rem; }
   .stat-row li:nth-child(3) { padding-left: 0; border-left: 0; }
   .photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 38vw; }

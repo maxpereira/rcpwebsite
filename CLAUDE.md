@@ -18,6 +18,9 @@ The owner sends updates in two shapes. Each has a checklist below:
 |---|---|
 | `index.html` | Home page |
 | `volunteer/index.html` | Volunteer roles + sign-up |
+| `about/index.html` | Mission statement, programs, "Why we do it", organization details (legal name, EIN, principal address) |
+| `faq/index.html` | The FAQ, grouped by topic |
+| `contact/index.html` | Email, event location, principal address, mailing list and socials |
 | `past-events/index.html` | List of past events, newest first, with running totals |
 | `past-events/YYYY-MM-<city>/index.html` | One recap page per event, e.g. `2026-10-san-carlos` |
 | `eventsignup/index.html` | Short link `/eventsignup/` (used on flyers) that redirects to the current SignUpGenius page |
@@ -33,7 +36,9 @@ The owner sends updates in two shapes. Each has a checklist below:
 
 Every page repeats the same header and footer markup, adjusted for its depth:
 `""` on the home page, `../` one level down, `../../` on recap pages. A change to
-the nav or footer must be made on all five pages.
+the nav or footer must be made on all eight pages (home, about, faq, contact, volunteer,
+past-events and each recap). Every menu item opens a real page, not an anchor on the home
+page: Google for Nonprofits rejected the site as a "single-page layout" when it did.
 
 ---
 
@@ -90,20 +95,22 @@ In each copy update `ticket-dow` (Sat), `ticket-day` (21), `ticket-month` (Nov),
 - JSON-LD `startDate` / `endDate`. Use `-07:00` while daylight saving is on (second Sunday of
   March to the first Sunday of November) and `-08:00` otherwise.
 - The volunteer split button: "Sign up for Nov 21".
-- FAQ "How often are events held?": "Our next event is Saturday, November 21st, 2026."
 
 **4. `volunteer/index.html`**
 - The `meta description`.
 - Timeline step 1: "…you're on the schedule for November 21st."
 - The closing section: "…for Saturday, November 21st…"
 
-**5. `past-events/index.html`**
-- The heading "Join us on November 21".
+**5. `past-events/index.html` and `faq/index.html`**
+- `past-events/index.html`: the heading "Join us on November 21".
+- `faq/index.html`, "How often are events held?": "Our next event is Saturday, November 21st, 2026."
 
 **6. If the time or place changed**, also update:
 - `ticket-note` and the ticket's address and maps link (all five copies)
 - the "3–6 PM" fact in `index.html`'s facts strip
-- the FAQ "How often" answer and the JSON-LD `location`
+- the FAQ "How often" answer in `faq/index.html` and the JSON-LD `location`
+- `about/index.html`: the "Monthly community repair events" program and the "Event location" row
+- `contact/index.html`: the "Events" row
 - the hero sub-line ("…monthly repair event in San Carlos")
 
 **7. Verify.**
@@ -244,12 +251,15 @@ These keep the site consistent. The redesign deliberately removed the "template"
 - **Cache-busting:** after changing `styles.css` or `script.js`, bump the `?v=YYYYMMDDx` query
   on every page's `<link>`/`<script>`.
 - **Copy:**
-  - Write "Repair Caf&eacute;" with the accent. The one exception is the footer's two legal lines
-    (the 501(c)(3) line and the copyright line), which use no accents at all: the registered business
+  - Write "Repair Caf&eacute;" with the accent. The exception is legal text: the footer's two legal
+    lines (the 501(c)(3) line and the copyright line), the About page's "Legal name" row and the
+    Contact page's "Organization" row use no accents at all: the registered business
     name "Repair Cafe of the Peninsula", the EIN as `<span class="nowrap">(EIN 43-2309122)</span>`, and
     "Repair Cafe International Foundation". Above them, the footer lists the principal address
     exactly as registered: "Principal address: 2108 N St, Ste N, Sacramento, CA 95816". Google for
     Nonprofits checks for the EIN, this address and a mission statement, so keep all three.
+  - The mission statement appears twice, word for word: `#mission` on the home page and on
+    `about/index.html` (also that page's JSON-LD `description`). Change all three together.
   - Use "Check-in closes at 5:30 PM".
   - Don't state how many items to bring anywhere except the FAQ, which says "up to two items
     per person per event".
