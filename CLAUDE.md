@@ -137,7 +137,7 @@ e.g. `san-carlos`). Then change these, keeping the structure:
 
 - `<title>` and `og:title` / `twitter:title`: `Repair Café of the Peninsula - <Month> <Year>, <City>`
 - the three descriptions: `Results and photos from our <ordinal> Repair Café on <Month D, YYYY> in <City>: <Items> items, <Fixed> fixed, and over <lb> lb of waste diverted from landfill.`
-- `og:url`
+- `og:url` and `<link rel="canonical">`: both the page's full URL with the trailing slash, as in `sitemap.xml`
 - `og:image` and `twitter:image`: the event's share image. `og:image:alt` and `twitter:image:alt`:
   that photo's alt text.
 - **Hero:**
