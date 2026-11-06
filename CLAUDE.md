@@ -244,7 +244,10 @@ These keep the site consistent. The redesign deliberately removed the "template"
 - **Cache-busting:** after changing `styles.css` or `script.js`, bump the `?v=YYYYMMDDx` query
   on every page's `<link>`/`<script>`.
 - **Copy:**
-  - Write "Repair Caf&eacute;" with the accent.
+  - Write "Repair Caf&eacute;" with the accent. The one exception is the footer's two legal lines
+    (the 501(c)(3) line and the copyright line), which use no accents at all: the registered business
+    name "Repair Cafe of the Peninsula", the EIN as `<span class="nowrap">(EIN 43-2309122)</span>`, and
+    "Repair Cafe International Foundation".
   - Use "Check-in closes at 5:30 PM".
   - Don't state how many items to bring anywhere except the FAQ, which says "up to two items
     per person per event".

@@ -729,6 +729,7 @@ a:hover { color: var(--green); }
 .footer-legal strong { color: rgba(246, 241, 231, 0.8); }
 .footer-legal a { color: inherit; }
 .footer-legal a:hover { color: var(--paper); }
+.footer-legal .nowrap { white-space: nowrap; }
 
 /* =========================================
    SUBPAGE HEADERS
