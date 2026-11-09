@@ -18,9 +18,9 @@ The owner sends updates in two shapes. Each has a checklist below:
 |---|---|
 | `index.html` | Home page |
 | `volunteer/index.html` | Volunteer roles + sign-up |
-| `about/index.html` | Mission statement, programs, "Why we do it", organization details (legal name, EIN, principal address) |
+| `about/index.html` | Mission statement, programs, "Why we do it", organization details (legal name, EIN, principal and mailing addresses) |
 | `faq/index.html` | The FAQ, grouped by topic |
-| `contact/index.html` | Email, event location, principal address, mailing list and socials |
+| `contact/index.html` | Email, event location, mailing address, mailing list and socials |
 | `past-events/index.html` | List of past events, newest first, with running totals |
 | `past-events/YYYY-MM-<city>/index.html` | One recap page per event, e.g. `2026-10-san-carlos` |
 | `eventsignup/index.html` | Short link `/eventsignup/` (used on flyers) that redirects to the current SignUpGenius page |
@@ -256,9 +256,11 @@ These keep the site consistent. The redesign deliberately removed the "template"
     lines (the 501(c)(3) line and the copyright line), the About page's "Legal name" row and the
     Contact page's "Organization" row use no accents at all: the registered business
     name "Repair Cafe of the Peninsula", the EIN as `<span class="nowrap">(EIN 43-2309122)</span>`, and
-    "Repair Cafe International Foundation". Above them, the footer lists the principal address
-    exactly as registered: "Principal address: 2108 N St, Ste N, Sacramento, CA 95816". Google for
-    Nonprofits checks for the EIN, this address and a mission statement, so keep all three.
+    "Repair Cafe International Foundation". Above them, the footer lists the mailing address:
+    "Mailing address: 1630 S Delaware St #5192, San Mateo, CA 94402". It also appears on the Contact page and in
+    the About page's organization details, which also keep the registered principal address
+    (2108 N St, Ste N, Sacramento, CA 95816; also the About JSON-LD `address`). Google for Nonprofits
+    checks for the EIN, an address and a mission statement, so keep all three.
   - The mission statement appears twice, word for word: `#mission` on the home page and on
     `about/index.html` (also that page's JSON-LD `description`). Change all three together.
   - Use "Check-in closes at 5:30 PM".
