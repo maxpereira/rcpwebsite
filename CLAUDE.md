@@ -24,7 +24,7 @@ The owner sends updates in two shapes. Each has a checklist below:
 | `past-events/index.html` | List of past events, newest first, with running totals |
 | `past-events/YYYY-MM-<city>/index.html` | One recap page per event, e.g. `2026-10-san-carlos` |
 | `eventsignup/index.html` | Short link `/eventsignup/` (used on flyers) that redirects to the current SignUpGenius page |
-| `donate/index.html` | Short link `/donate/` that redirects to the Zeffy donation form (the URL appears three times, as in `eventsignup/`). The site's Donate buttons link to Zeffy directly |
+| `donate/index.html` | Short link `/donate/` that redirects to the Zeffy donation form. It has its own link-preview tags and redirects with JavaScript (the Zeffy URL appears twice: the script and the visible link) so crawlers show our preview, not Zeffy's. The site's Donate buttons link to Zeffy directly |
 | `styles.css` | The only stylesheet, used by every page |
 | `script.js` | Header border on scroll + mobile menu. FAQ uses native `<details>`, no JS |
 | `fonts/` | Self-hosted Fraunces (headings) and Inter (body) |
