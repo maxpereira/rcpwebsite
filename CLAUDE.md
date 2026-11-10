@@ -44,6 +44,8 @@ page: Google for Nonprofits rejected the site as a "single-page layout" when it 
 Every page's `<head>` also starts with the Google Tag Manager snippet (`GTM-W52NBJSS`) and,
 before `</head>`, the Google Analytics tag (`G-7F52SY3J4R`). New pages copied from an existing
 one keep both. The two redirect pages (`donate/`, `eventsignup/`) have neither.
+Every SignUpGenius button also has `onclick="gtag('event','volunteer_signup_click');"`, which
+counts sign-up clicks in Google Analytics. Keep it on new copies of the button.
 
 ---
 
