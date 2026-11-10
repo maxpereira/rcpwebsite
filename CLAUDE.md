@@ -41,6 +41,10 @@ the nav or footer must be made on all eight pages (home, about, faq, contact, vo
 past-events and each recap). Every menu item opens a real page, not an anchor on the home
 page: Google for Nonprofits rejected the site as a "single-page layout" when it did.
 
+Every page's `<head>` also starts with the Google Tag Manager snippet (`GTM-W52NBJSS`) and,
+before `</head>`, the Google Analytics tag (`G-7F52SY3J4R`). New pages copied from an existing
+one keep both. The two redirect pages (`donate/`, `eventsignup/`) have neither.
+
 ---
 
 ## Stats ledger
