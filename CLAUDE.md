@@ -57,7 +57,8 @@ Keep this table current. The running totals on the site are computed from it.
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | 2026-09-26 | `2026-09-san-carlos` | 28 | — | 38 | 25 | 8 | 5 | 66% | 112 lb 13 oz |
 | 2 | 2026-10-24 | `2026-10-san-carlos` | 30 | 20 | 41 | 31 | 6 | 4 | 76% | 250 lb 7 oz |
-| **Total** | | | | | **79** | **56** | **14** | **9** | **71%** | **363 lb 4 oz** |
+| 3 | 2026-11-21 | `2026-11-san-carlos` | 25 | 20 | 35 | 25 | 7 | 3 | 71% | 154 lb 13 oz |
+| **Total** | | | | | **114** | **81** | **21** | **12** | **71%** | **518 lb 1 oz** |
 
 - The owner's stats screenshot maps like this: Waste Diversion → waste, Unique People → Visitors,
   Unique Volunteers → Volunteers, Total Items → Items. Fixed, Not Fixed and Returned w/
@@ -89,6 +90,10 @@ Then update:
 
 In each copy update `ticket-dow` (Sat), `ticket-day` (21), `ticket-month` (Nov), `ticket-title`
 ("Saturday, November 21 · 3–6 PM") and the button `href`.
+
+For a one-off event that only takes some kinds of repairs (like the December 12, 2026 holiday pop-up in
+San Mateo: sewing/mending and bicycles only), state the limit in a `ticket-focus` paragraph under the
+address. Remove it, and the kicker's "· Holiday pop-up", when the ticket goes back to a regular event.
 
 **2. The SignUpGenius URL, everywhere.**
 - Replace the old URL on all pages.
@@ -179,9 +184,9 @@ e.g. `san-carlos`). Then change these, keeping the structure:
 
 **5. Update the running totals on `index.html`.**
 - The `tally` in `#past-events`: items, fixed, fix rate, whole pounds.
-- That section's kicker: "Two events in" → "Three events in".
-- How-it-works step 3: "Of the 79 items brought to our first two events, 56 went home working."
-- The volunteer split lead: "Twenty neighbors volunteered at our October event." Update it with
+- That section's kicker: "Three events in" → "Four events in".
+- How-it-works step 3: "Of the 114 items brought to our first three events, 81 went home working."
+- The volunteer split lead: "Twenty neighbors volunteered at our November event." Update it with
   the latest event's volunteer count and month, if given.
 - Optionally swap fresher photos into the home page. Keep a photo in a single slot per page
   where possible.

@@ -1167,3 +1167,14 @@ a:hover { color: var(--green); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Next-event ticket: a one-off restriction on what we can fix (e.g. a themed pop-up) */
+.ticket-focus {
+  margin: 0.75rem 0 0.5rem;
+  padding: 0.7rem 0.95rem;
+  border-left: 3px solid var(--clay);
+  background: var(--paper-deep);
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+.ticket-focus strong { display: block; color: var(--clay); font-size: 1.02rem; }
