@@ -111,6 +111,8 @@ address. Remove it, and the kicker's "· Holiday pop-up", when the ticket goes b
 **4. `volunteer/index.html`**
 - The `meta description`.
 - Timeline step 1: "…you're on the schedule for November 21st."
+  For Dec 12, 2026 both lines also name the two SignUpGenius shifts (12–3 PM or 3–6 PM); drop them
+  when the sign-up goes back to a single shift.
 - The closing section: "…for Saturday, November 21st…"
 
 **5. `past-events/index.html` and `faq/index.html`**
