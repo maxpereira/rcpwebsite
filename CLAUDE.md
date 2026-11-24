@@ -125,7 +125,7 @@ address. Remove it, and the kicker's "· Holiday pop-up", when the ticket goes b
 - the FAQ "How often" answer in `faq/index.html` and the JSON-LD `location`
 - `about/index.html`: the "Monthly community repair events" program and the "Event location" row
 - `contact/index.html`: the "Events" row
-- the hero sub-line ("…monthly repair event in San Carlos")
+- the hero sub-line on `index.html` ("…runs free, monthly repair events in San Mateo County") if it stops being true
 
 **7. Verify.**
 - Grep again for the old date (e.g. "November 21", "Nov 21", `rcpnov`, `>21<`). There should be
